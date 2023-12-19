@@ -1,0 +1,14 @@
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\bin\Debug\net8.0\CursoAvanade.exe
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\bin\Debug\net8.0\CursoAvanade.deps.json
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\bin\Debug\net8.0\CursoAvanade.runtimeconfig.json
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\bin\Debug\net8.0\CursoAvanade.dll
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\bin\Debug\net8.0\CursoAvanade.pdb
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.AssemblyInfoInputs.cache
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.AssemblyInfo.cs
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.csproj.CoreCompileInputs.cache
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.dll
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\refint\CursoAvanade.dll
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.pdb
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\CursoAvanade.genruntimeconfig.cache
+C:\Users\mateu\OneDrive\Documentos\Developing\Projects\CursoAvanade\obj\Debug\net8.0\ref\CursoAvanade.dll
