@@ -9,7 +9,7 @@ estados.Add("MG", "Minas Gerais");
 
 foreach(var item in estados)
 {
-    Console.WriteLine($"Chave: {item.Key}, valor: {item.Value}");
+    Console.WriteLine($"Chave: {item.Key}, Valor do item na chave: {item.Value}");
 }
 
 
