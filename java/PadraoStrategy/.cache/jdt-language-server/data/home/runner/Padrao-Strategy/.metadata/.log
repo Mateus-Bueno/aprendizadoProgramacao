@@ -1,0 +1,3932 @@
+!SESSION 2023-12-11 21:51:08.219 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+This is a continuation of log file /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy/.metadata/.bak_0.log
+Created Time: 2023-12-11 21:51:18.425
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.426
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.726
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.728
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.827
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.828
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.836
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.837
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.921
+!MESSAGE ProjectRegistryRefreshJob finished 83ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:18.922
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:19.220
+!MESSAGE Started org.eclipse.buildship.core 298ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:19.530
+!MESSAGE LoadingGradleVersionJob finished 310ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:20.020
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.242
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 21:51:28.421
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 21:51:28.422
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 21:51:28.422
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 21:51:28.422
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 21:51:28.422
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.639
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.648
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.719
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.728
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:28.729
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:31.727
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:31.730
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.227
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.227
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.420
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.421
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.431
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.534
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.535
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.630
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.632
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.737
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.739
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.920
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.921
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:32.932
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.029
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.039
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.220
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.222
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.321
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.323
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.331
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.336
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.527
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.619
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.622
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.625
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.732
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.820
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.823
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.825
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.932
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.935
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.938
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:33.942
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.031
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.035
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.038
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.222
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.222
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.225
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.227
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.321
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.321
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.325
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.328
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.427
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.427
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.433
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.434
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.535
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.620
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.622
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.624
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.635
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.720
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.722
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.723
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.822
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.823
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.825
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.827
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.928
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.929
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.932
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:34.933
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.027
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.030
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.032
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.134
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.137
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.221
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.221
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.326
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.328
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.330
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.332
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.423
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.426
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.427
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.428
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.436
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.438
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.444
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.520
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.621
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.622
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.624
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.625
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.638
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.654
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.725
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.731
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.824
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.825
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.828
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.830
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.925
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.926
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.928
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:35.930
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.022
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.022
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.025
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.026
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.123
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.123
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.125
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.127
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.233
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.236
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.237
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.419
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.420
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.436
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.437
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.439
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.521
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.525
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.531
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.533
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.540
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.548
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.633
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:36.647
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:37.744
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:37.823
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.241
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.242
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.325
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.326
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.856
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:38.920
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:39.120
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:39.121
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:39.942
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:39.945
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.226
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.227
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.341
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.420
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.521
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.522
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.735
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.735
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.921
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:40.922
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:41.028
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:41.029
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 21:51:41.030
+!MESSAGE Validated 12. Took 4159 ms
+!SESSION 2023-12-11 23:35:09.574 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:35:16.377
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:18.975
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:20.881
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.273
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.276
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.291
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.294
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.379
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.381
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.384
+!MESSAGE ProjectRegistryRefreshJob finished 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.384
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.579
+!MESSAGE Started org.eclipse.buildship.core 195ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:21.884
+!MESSAGE LoadingGradleVersionJob finished 304ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:22.373
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:28.780
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:35:28.886
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:35:28.887
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:35:28.887
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:35:28.887
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:35:28.887
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:29.182
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:29.192
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:29.201
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:29.275
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:29.279
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:31.998
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.078
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.487
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.588
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.591
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.678
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.785
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.785
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.883
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:32.884
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.081
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.083
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.179
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.179
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.274
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.275
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.286
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.387
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.474
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.475
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.480
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.486
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.684
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.773
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.776
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.778
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.880
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.884
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.972
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:33.974
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.079
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.080
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.083
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.085
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.176
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.176
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.178
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.180
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.283
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.286
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.289
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.373
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.393
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.395
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.397
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.485
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.488
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.490
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.571
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.585
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.673
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.674
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.675
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.686
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.689
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.690
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.754
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.785
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.851
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.877
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.878
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.891
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.893
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.894
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:34.992
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.050
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.077
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.080
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.082
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.084
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.087
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.174
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.176
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.178
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.180
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.182
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:35.188
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:36.578
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:36.581
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:37.689
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:37.690
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.094
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.095
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.278
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.279
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.780
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:38.781
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.173
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.174
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.299
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.374
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.477
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.479
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.578
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.579
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.679
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.680
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.783
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.784
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.881
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.882
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:35:39.883
+!MESSAGE Validated 12. Took 4411 ms
+!SESSION 2023-12-11 23:36:46.492 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:36:52.672
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:54.985
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:56.877
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.373
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.385
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.494
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.495
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.574
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.576
+!MESSAGE Started org.eclipse.m2e.core 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.578
+!MESSAGE ProjectRegistryRefreshJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.579
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.784
+!MESSAGE Started org.eclipse.buildship.core 205ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:57.982
+!MESSAGE LoadingGradleVersionJob finished 195ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:36:58.476
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.183
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:37:04.286
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:37:04.288
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:37:04.288
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:37:04.288
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:37:04.288
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.472
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.483
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.572
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.577
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:04.578
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.277
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.292
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.681
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.682
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.788
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.875
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.892
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:07.972
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.077
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.077
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.189
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.190
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.315
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.316
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.397
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.472
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.487
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.583
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.680
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.680
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.786
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.790
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.878
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:08.879
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.081
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.085
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.096
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.100
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.301
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.374
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.398
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.400
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.421
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.471
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.474
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.477
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.578
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.581
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.583
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.586
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.679
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.683
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.692
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.771
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.885
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.894
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.975
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:09.978
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.124
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.175
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.178
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.183
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.296
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.378
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.399
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.473
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.597
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.600
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.673
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.675
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.782
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.786
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.791
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.795
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.986
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:10.996
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.011
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.027
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.093
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.104
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.173
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.174
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.433
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.441
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.492
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.505
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.761
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.772
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.787
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.793
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.924
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.938
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:11.987
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.024
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.103
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.192
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.205
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.218
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.405
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.410
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.431
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.434
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.521
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.530
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.589
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.600
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.796
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.797
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.799
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.800
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.876
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.879
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.881
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.895
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.948
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.977
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.981
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.992
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:12.994
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.074
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.077
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.164
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.175
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.178
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.189
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.281
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.989
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:13.991
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.294
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.295
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.379
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.381
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.401
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.402
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.490
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.493
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.688
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.699
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.819
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.820
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.892
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.893
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.988
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:14.989
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.083
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.084
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.185
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.186
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.279
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.281
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:37:15.282
+!MESSAGE Validated 12. Took 1550 ms
+!SESSION 2023-12-11 23:38:20.275 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:38:26.482
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:28.875
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:30.876
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.303
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.306
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.401
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.405
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.491
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.492
+!MESSAGE Started org.eclipse.m2e.core 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.496
+!MESSAGE ProjectRegistryRefreshJob finished 3ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.497
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.717
+!MESSAGE Started org.eclipse.buildship.core 220ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:31.882
+!MESSAGE LoadingGradleVersionJob finished 110ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:32.394
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:38.783
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:38:39.296
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:38:39.298
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:38:39.298
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:38:39.298
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:38:39.298
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:39.516
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:39.600
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:39.610
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:39.618
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:39.619
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:42.999
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.002
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.382
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.383
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.645
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.647
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.812
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.823
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.927
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:43.932
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.021
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.022
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.179
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.183
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.307
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.308
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.395
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.396
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.578
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.581
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.612
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.674
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.773
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.777
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.794
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.802
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.996
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:44.997
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.071
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.073
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.174
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.179
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.183
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.184
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.306
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.306
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.386
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.392
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.407
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.409
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.473
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.473
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.579
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.581
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.588
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.590
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.692
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.700
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.716
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.716
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.795
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.807
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.812
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.883
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.883
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.890
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.896
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:45.995
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.001
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.072
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.073
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.174
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.178
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.180
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.181
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.194
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.196
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.198
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.272
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.291
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.300
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.372
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.374
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.516
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.517
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.519
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.521
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.612
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.621
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.676
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.680
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.776
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.780
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.784
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.789
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.885
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.885
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.893
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.894
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.986
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.987
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.990
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:46.994
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.079
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.081
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.083
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.086
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.181
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.190
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.197
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.212
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.285
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.286
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.294
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.301
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.313
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.372
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.375
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.376
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.394
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.396
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.397
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.485
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.490
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.493
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:47.643
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.375
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.378
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.681
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.682
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.697
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.698
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.791
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.794
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.890
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:48.891
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.104
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.106
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.213
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.218
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.392
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.394
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.484
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.484
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.579
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.579
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.672
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.673
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.775
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.777
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:38:49.778
+!MESSAGE Validated 12. Took 1734 ms
+!SESSION 2023-12-11 23:39:42.887 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:39:48.274
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:50.572
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:52.682
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.089
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.177
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.273
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.274
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.290
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.292
+!MESSAGE Started org.eclipse.m2e.core 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.295
+!MESSAGE ProjectRegistryRefreshJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.373
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.581
+!MESSAGE Started org.eclipse.buildship.core 209ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:53.783
+!MESSAGE LoadingGradleVersionJob finished 199ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:54.274
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:39:59.888
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:40:00.075
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:40:00.076
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:40:00.077
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:40:00.077
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:40:00.077
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:00.272
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:00.289
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:00.294
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:00.295
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:00.298
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:02.791
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:02.874
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.272
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.272
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.394
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.396
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.495
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.497
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.678
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.679
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.872
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.876
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.894
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:03.972
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.078
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.078
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.173
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.174
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.232
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.273
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.376
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.376
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.474
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.475
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.482
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.572
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.687
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.772
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.774
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.775
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.873
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.873
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.876
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.877
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.977
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.977
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.980
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:04.983
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.086
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.090
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.093
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.183
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.186
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.187
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.281
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.284
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.288
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.372
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.387
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.390
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.471
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.472
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.483
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.484
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.486
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.585
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.586
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.674
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.674
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.688
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.690
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.772
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.773
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.873
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.874
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.876
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.878
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:05.972
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.603
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.606
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.885
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.886
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.973
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.974
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.985
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:06.986
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.085
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.086
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.374
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.375
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.477
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.478
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.575
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.576
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.677
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.678
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.699
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.772
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.872
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.873
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.887
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.973
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:40:07.974
+!MESSAGE Validated 12. Took 1600 ms
+!SESSION 2023-12-11 23:41:11.294 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:41:17.488
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:19.799
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:21.679
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.095
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.173
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.188
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.189
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.308
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.371
+!MESSAGE Started org.eclipse.m2e.core 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.388
+!MESSAGE ProjectRegistryRefreshJob finished 9ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.411
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.773
+!MESSAGE Started org.eclipse.buildship.core 361ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:22.872
+!MESSAGE LoadingGradleVersionJob finished 98ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:23.395
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.372
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:41:29.487
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:41:29.489
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:41:29.489
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:41:29.489
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:41:29.489
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.687
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.781
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.796
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.877
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:29.879
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:32.873
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.289
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.476
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.495
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.590
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.786
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:33.915
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.088
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.106
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.197
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.297
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.393
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.475
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.481
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.683
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.686
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.687
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.788
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.790
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.872
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.978
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.981
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:34.984
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.077
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.080
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.082
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.177
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.179
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.180
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.190
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.272
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.274
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.371
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.374
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.376
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.385
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.387
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.388
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.477
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.479
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.481
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.582
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.584
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.586
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.686
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.689
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.691
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.779
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.781
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.782
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.971
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.973
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:35.976
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.076
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.090
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.096
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.279
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.282
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.284
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.373
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.385
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.387
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.490
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.494
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.572
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.672
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.677
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.684
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.702
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.782
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.786
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.881
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.884
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.887
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.980
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:36.983
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.073
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.093
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.096
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.173
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.184
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.185
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.187
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:37.723
+!MESSAGE Reconciled 12. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.302
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.304
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.676
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.685
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.717
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.772
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.875
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.878
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.984
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:38.985
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.173
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.174
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.278
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.279
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.299
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.299
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.390
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.391
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.582
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.586
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.686
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.687
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.706
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.772
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:41:39.774
+!MESSAGE Validated 12. Took 1648 ms
+!SESSION 2023-12-11 23:42:49.373 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-11 23:42:55.190
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:57.579
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.085
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.487
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.489
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.580
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.581
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.672
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.682
+!MESSAGE Started org.eclipse.m2e.core 10ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.772
+!MESSAGE ProjectRegistryRefreshJob finished 19ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.773
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:42:59.981
+!MESSAGE Started org.eclipse.buildship.core 207ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:00.182
+!MESSAGE LoadingGradleVersionJob finished 201ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:00.671
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:06.684
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-11 23:43:06.790
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-11 23:43:06.872
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-11 23:43:06.873
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-11 23:43:06.873
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-11 23:43:06.873
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:07.082
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:07.090
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:07.172
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:07.178
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:07.180
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.003
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.007
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.284
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.284
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.472
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.474
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.574
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.575
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.702
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.826
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.828
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:10.896
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.075
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.076
+!MESSAGE Reconciled 2. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.089
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.089
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.184
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.247
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.286
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.384
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.389
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.478
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.480
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.679
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.686
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.694
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.696
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.797
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.800
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.818
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.888
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.972
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.976
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.980
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.989
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:11.991
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.073
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.074
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.090
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.171
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.174
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.177
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.279
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.280
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.288
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.372
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.387
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.390
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.392
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.496
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.499
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.501
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.577
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.578
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.580
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.583
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.681
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.684
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.686
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.776
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.777
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.780
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.782
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.873
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.874
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.876
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.877
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.985
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:12.986
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.073
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.075
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.182
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.182
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.185
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.187
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.284
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.286
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.288
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.374
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.374
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.376
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.378
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.485
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.485
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.488
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.489
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.599
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.604
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.609
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.610
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.688
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.690
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.691
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.773
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.775
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.776
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.776
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.790
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.872
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.875
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.878
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.890
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.973
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.975
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.975
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:13.986
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.074
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.077
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.079
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.157
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.783
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:14.786
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.072
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.074
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.088
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.089
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.182
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.183
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.281
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.282
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.390
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.391
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.572
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.573
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.594
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.595
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.683
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.684
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.786
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.787
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.971
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.973
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.984
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.985
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:15.986
+!MESSAGE Validated 12. Took 1409 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:33.948
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:33.974
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:34.982
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.078
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.080
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.082
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.175
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.183
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.186
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.275
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.278
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-11 23:43:35.982
+!MESSAGE >> document/codeAction
+!SESSION 2023-12-21 11:36:46.468 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-21 11:36:51.519
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:53.078
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.082
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.370
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.372
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.384
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.467
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.476
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.477
+!MESSAGE Started org.eclipse.m2e.core 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.483
+!MESSAGE ProjectRegistryRefreshJob finished 4ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.485
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:54.667
+!MESSAGE Started org.eclipse.buildship.core 182ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:57.567
+!MESSAGE LoadingGradleVersionJob finished 2899ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:36:57.871
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:02.873
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-12-21 11:37:02.972
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2023-12-21 11:37:02.974
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-12-21 11:37:02.974
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2023-12-21 11:37:02.974
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2023-12-21 11:37:02.974
+!MESSAGE /home/runner/Padrao-Strategy overlaps the workspace location: /home/runner/Padrao-Strategy/.cache/jdt-language-server/data/home/runner/Padrao-Strategy
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:03.301
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:03.374
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:03.384
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:03.389
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:03.390
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.192
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.194
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.578
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.579
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.670
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.672
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.690
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.770
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.873
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.881
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.979
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:05.985
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.169
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.170
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.286
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.287
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.479
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.480
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.576
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.586
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.676
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.676
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.770
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.775
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.780
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.785
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.970
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.971
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.978
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:06.980
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.076
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.076
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.078
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.079
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.093
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.093
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.169
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.172
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.182
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.184
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.185
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.275
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.276
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.278
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.280
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.383
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.385
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.387
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.474
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.476
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.478
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.480
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.577
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.579
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.581
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.583
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.592
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.667
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.669
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.671
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.679
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.681
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.683
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.770
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.770
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.772
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.773
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.779
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.781
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.782
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.885
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.886
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.888
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.889
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.985
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:07.987
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.068
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.068
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.080
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.083
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.084
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.137
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.167
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.169
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.171
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.178
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.179
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.180
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.272
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.273
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.274
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.275
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.288
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.289
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.291
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.369
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.371
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.372
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.373
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.382
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.384
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.385
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.443
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.474
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.476
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.478
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.574
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.575
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.577
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.578
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.589
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.591
+!MESSAGE Clearing problems for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.672
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.672
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.872
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.873
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.874
+!MESSAGE Clearing problems for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.876
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.976
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.976
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.979
+!MESSAGE Clearing problems for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:08.980
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.075
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.076
+!MESSAGE Clearing problems for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.077
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.170
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.171
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.173
+!MESSAGE Clearing problems for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.175
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.183
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.184
+!MESSAGE Clearing problems for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.185
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.279
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.281
+!MESSAGE Clearing problems for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.284
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.375
+!MESSAGE Reconciled 3. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.377
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.381
+!MESSAGE Clearing problems for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.382
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.471
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.471
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.472
+!MESSAGE Clearing problems for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.474
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.482
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.567
+!MESSAGE Clearing problems for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.569
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.569
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.580
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.582
+!MESSAGE Clearing problems for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.583
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.669
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.670
+!MESSAGE Reconciled 2. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.672
+!MESSAGE Clearing problems for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.673
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.682
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.731
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.779
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.782
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.787
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.789
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.792
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.793
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.868
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.869
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.871
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.873
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:09.876
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:11.276
+!MESSAGE begin problem for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:11.281
+!MESSAGE 1 problems reported for /Machado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:11.778
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:11.867
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.073
+!MESSAGE begin problem for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.079
+!MESSAGE 1 problems reported for /Arma.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.085
+!MESSAGE begin problem for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.170
+!MESSAGE 1 problems reported for /Bobo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.373
+!MESSAGE begin problem for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.373
+!MESSAGE 1 problems reported for /Equipamento.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.477
+!MESSAGE begin problem for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.477
+!MESSAGE 1 problems reported for /Personagens.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.588
+!MESSAGE begin problem for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.667
+!MESSAGE 1 problems reported for /Faca.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.769
+!MESSAGE begin problem for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.770
+!MESSAGE 1 problems reported for /Rei.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.781
+!MESSAGE begin problem for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.781
+!MESSAGE 1 problems reported for /Troll.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.976
+!MESSAGE begin problem for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.976
+!MESSAGE 1 problems reported for /Cajado.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.987
+!MESSAGE begin problem for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:12.987
+!MESSAGE 1 problems reported for /Espada.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:13.088
+!MESSAGE begin problem for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:13.088
+!MESSAGE 1 problems reported for /Rainha.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:37:13.089
+!MESSAGE Validated 12. Took 2922 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:42:57.577
+!MESSAGE >> document/hover
