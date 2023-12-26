@@ -8,24 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mateu\\.nuget\\packages\\": {}
+    "C:\\Users\\Mateus Bueno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\Projects\\CursoAvanade\\CursoAvanade.csproj",
+      "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\CursoAvanade\\CursoAvanade.csproj",
       "projectName": "CursoAvanade",
-      "projectPath": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\Projects\\CursoAvanade\\CursoAvanade.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\Projects\\CursoAvanade\\obj\\",
+      "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\CursoAvanade\\CursoAvanade.csproj",
+      "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\CursoAvanade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

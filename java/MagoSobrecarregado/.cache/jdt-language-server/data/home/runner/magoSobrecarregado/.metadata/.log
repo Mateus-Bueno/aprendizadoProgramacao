@@ -1,0 +1,58 @@
+!SESSION 2023-12-21 11:46:02.793 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/magoSobrecarregado/.cache/jdt-language-server/data/home/runner/magoSobrecarregado
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:10.381
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:11.580
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:11.978
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:11.980
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.078
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.079
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.086
+!MESSAGE Wait for AutoBuildOffJob start
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.089
+!MESSAGE Wait for AutoBuildOffJob end 2ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.090
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.178
+!MESSAGE Started org.eclipse.m2e.core 88ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.179
+!MESSAGE ProjectRegistryRefreshJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.180
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:12.377
+!MESSAGE Started org.eclipse.buildship.core 197ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:16.700
+!MESSAGE LoadingGradleVersionJob finished 4321ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:16.882
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:17.084
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-12-21 11:46:18.081
+!MESSAGE Finished creating the Java project jdt.ls-java-project

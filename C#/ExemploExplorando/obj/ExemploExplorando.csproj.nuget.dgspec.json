@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
-        "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateu\\OneDrive\\Documentos\\Developing\\C#\\ExemploExplorando\\obj\\",
+        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
+        "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

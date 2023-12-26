@@ -27,3 +27,17 @@ C:\Users\mateu\OneDrive\Documentos\Developing\C#\ExemploExplorando\obj\Debug\net
 C:\Users\mateu\OneDrive\Documentos\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\mateu\OneDrive\Documentos\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\mateu\OneDrive\Documentos\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.exe
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.deps.json
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.runtimeconfig.json
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.dll
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfoInputs.cache
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfo.cs
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.CoreCompileInputs.cache
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.dll
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\refint\ExemploExplorando.dll
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
+C:\Users\Mateus Bueno\OneDrive\Área de Trabalho\Developing\C#\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
