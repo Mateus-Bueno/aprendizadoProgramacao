@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
-      "projectName": "ExemploExplorando",
-      "projectPath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
+      "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioRobo\\DesafioRobo.csproj",
+      "projectName": "DesafioRobo",
+      "projectPath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioRobo\\DesafioRobo.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\ExemploExplorando\\obj\\",
+      "outputPath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioRobo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"

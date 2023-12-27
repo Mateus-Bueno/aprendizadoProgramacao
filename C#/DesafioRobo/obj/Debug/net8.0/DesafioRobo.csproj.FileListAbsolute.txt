@@ -1,0 +1,15 @@
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\bin\Debug\net8.0\DesafioRobo.exe
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\bin\Debug\net8.0\DesafioRobo.deps.json
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\bin\Debug\net8.0\DesafioRobo.runtimeconfig.json
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\bin\Debug\net8.0\DesafioRobo.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\bin\Debug\net8.0\DesafioRobo.pdb
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.AssemblyInfoInputs.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.AssemblyInfo.cs
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.csproj.CoreCompileInputs.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.sourcelink.json
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\refint\DesafioRobo.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.pdb
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\DesafioRobo.genruntimeconfig.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Developing\C#\DesafioRobo\obj\Debug\net8.0\ref\DesafioRobo.dll

@@ -13,10 +13,10 @@ namespace ExemploExplorando.Models
 
         }
 
-        public Pessoa(string nome, string sobrenome)
+        public Pessoa(string nome, int idade)
         {
             Nome = nome;
-            Sobrenome = sobrenome;
+            Idade = idade;
         }
 
         private string _nome;
@@ -36,6 +36,8 @@ namespace ExemploExplorando.Models
         }
 
         public string Sobrenome { get; set; }
+
+        
 
         public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 

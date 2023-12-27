@@ -1,19 +1,16 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
 
-foreach(var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor do item na chave: {item.Value}");
-}
-
-
-
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor do item na chave: {item.Value}");
+// }
 
 
 
@@ -144,17 +141,23 @@ foreach(var item in estados)
 
 
 
-// Pessoa pessoa1 = new Pessoa(nome: "Jão",sobrenome:  "Valdo");
+// Pessoa pessoa1 = new Pessoa(nome: Console.ReadLine(),Convert.ToInt32(Console.ReadLine()));
 
-// Pessoa pessoa2 = new Pessoa(nome: "Jubiscreia",sobrenome: "Silveira");
+//Pessoa pessoa2 = new Pessoa(nome: "Jubiscreia",sobrenome: "Silveira");
+
+//pessoa1.Nome = Console.ReadLine();
 
 // Curso cursoDeIngles = new Curso();
 // cursoDeIngles.Nome = "Ingles";
 // cursoDeIngles.Alunos = new List<Pessoa>();
 
+// pessoa1.Apresentar();
+
+// string a = "123456789";
+// Console.WriteLine(a.Contains("4"));
 
 // cursoDeIngles.AdicionarAluno(pessoa1);
-// cursoDeIngles.AdicionarAluno(pessoa2);
+//cursoDeIngles.AdicionarAluno(pessoa2);
 // cursoDeIngles.ListarAlunos();
 
 
