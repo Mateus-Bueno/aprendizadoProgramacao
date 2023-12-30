@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\trilha-net-fundamentos-desafio\\DesafioFundamentos\\DesafioFundamentos.csproj": {}
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioFundamentos-Estacionamento\\DesafioFundamentos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\trilha-net-fundamentos-desafio\\DesafioFundamentos\\DesafioFundamentos.csproj": {
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioFundamentos-Estacionamento\\DesafioFundamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\trilha-net-fundamentos-desafio\\DesafioFundamentos\\DesafioFundamentos.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioFundamentos-Estacionamento\\DesafioFundamentos.csproj",
         "projectName": "DesafioFundamentos",
-        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\trilha-net-fundamentos-desafio\\DesafioFundamentos\\DesafioFundamentos.csproj",
+        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioFundamentos-Estacionamento\\DesafioFundamentos.csproj",
         "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\trilha-net-fundamentos-desafio\\DesafioFundamentos\\obj\\",
+        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\DesafioFundamentos-Estacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"

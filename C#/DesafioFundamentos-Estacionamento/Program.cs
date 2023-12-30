@@ -3,9 +3,12 @@
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+
+
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
+Console.Clear();
 Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
                   "Digite o preço inicial:");
 precoInicial = Convert.ToDecimal(Console.ReadLine());
@@ -23,6 +26,7 @@ bool exibirMenu = true;
 while (exibirMenu)
 {
     Console.Clear();
+    Console.WriteLine("----------------------");
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
     Console.WriteLine("2 - Remover veículo");
@@ -33,6 +37,7 @@ while (exibirMenu)
     switch (Console.ReadLine())
     {
         case "1":
+            Console.Clear();
             es.AdicionarVeiculo();
             break;
 
@@ -45,7 +50,7 @@ while (exibirMenu)
             break;
 
         case "4":
-            exibirMenu = false;
+            exibirMenu = es.relatorioDoDia();            
             break;
 
         default:
@@ -53,8 +58,8 @@ while (exibirMenu)
             break;
     }
 
-    Console.WriteLine("Pressione uma tecla para continuar");
-    Console.ReadLine();
+    Console.WriteLine("\nPressione uma tecla para continuar");
+    Console.ReadKey();
 }
-
+Console.Clear();
 Console.WriteLine("O programa se encerrou");
