@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+      "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
       "projectName": "Estacionamento",
-      "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+      "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
       "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\obj\\",
+      "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"

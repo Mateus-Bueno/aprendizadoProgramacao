@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj": {}
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj": {
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj",
         "projectName": "EstacionamentoTestes",
-        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj",
+        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\EstacionamentoTestes\\EstacionamentoTestes.csproj",
         "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\EstacionamentoTestes\\obj\\",
+        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\EstacionamentoTestes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {
-                "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj"
+              "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {
+                "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
         "projectName": "Estacionamento",
-        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
         "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\ProjetoEstacionamento\\Estacionamento\\obj\\",
+        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"
