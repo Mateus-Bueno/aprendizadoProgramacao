@@ -67,7 +67,10 @@ namespace Estacionamento.Services
             {
                 try
                 {
-                    Console.WriteLine("\nDigite a quantidade de horas que o veículo permaneceu estacionado:");
+                    Console.Clear();
+                    Console.WriteLine("----------------------------------------------------------------------");
+                    Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
+                    Console.WriteLine("----------------------------------------------------------------------");
 
                     int horas = 0;
                     decimal valorTotal = 0; 
@@ -157,15 +160,20 @@ namespace Estacionamento.Services
         public bool relatorioDoDia()
         {
             bool status;
+            Funcionarios _func = new Funcionarios();
 
             try
             {
+                Console.Clear();
                 if(veiculos.Any())
                 {
                     throw new EstacionamentoNaoVazioException();
                 }
 
+                Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine($"O total arrecadado hoje foi {lucroDoDia:C}.");
+                Console.WriteLine($"Funcionário responsável: {_func.verificarUsuario()}");
+                Console.WriteLine("-------------------------------------------------");
                 status = false;
             }
             catch (EstacionamentoNaoVazioException)

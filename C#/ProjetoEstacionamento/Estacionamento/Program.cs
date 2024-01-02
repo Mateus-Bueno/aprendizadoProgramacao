@@ -3,8 +3,9 @@
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+Funcionarios funcionarios = new Funcionarios();
 
-bool inicializador = true;
+bool inicializadorEstacionamento = true;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
@@ -21,7 +22,7 @@ do
         Console.WriteLine("Agora digite o preço por hora:");
         precoPorHora = Convert.ToDecimal(Console.ReadLine());
 
-        inicializador = false;
+        inicializadorEstacionamento = false;
     }
     catch(FormatException)
     {
@@ -30,7 +31,7 @@ do
         Console.ReadKey();
     }
 }
-while(inicializador);
+while(inicializadorEstacionamento);
 
 
 // Instancia a classe Estacionamento, já com os valores obtidos anteriormente
@@ -43,13 +44,14 @@ bool exibirMenu = true;
 while (exibirMenu)
 {
     Console.Clear();
-    Console.WriteLine("----------------------");
+    Console.WriteLine("----------------------------");
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
     Console.WriteLine("2 - Remover veículo");
     Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - Encerrar");
-    Console.WriteLine("----------------------");
+    Console.WriteLine("4 - alterar funcionario ");
+    Console.WriteLine("5 - Encerrar");
+    Console.WriteLine("----------------------------");
 
     switch (Console.ReadLine())
     {
@@ -67,6 +69,28 @@ while (exibirMenu)
             break;
 
         case "4":
+            Console.Clear();
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine($"Usuário atual: {funcionarios.verificarUsuario()}\n");
+            Console.WriteLine("Digite sua opção:");
+            Console.WriteLine("1 - Cadastrar novo usuário");
+            Console.WriteLine("2 - Alternar usuário atual");
+            Console.WriteLine("------------------------------------------");
+            switch(Console.ReadLine())
+            {
+                case "1":
+                    funcionarios.CadastrarNovoUsuario();
+                    break;
+                case "2":
+                    funcionarios.RealizarLogin();
+                    break;
+                default:
+                    Console.WriteLine("\nOpção inválida");
+                    break;
+            }
+            break;
+
+        case "5":
             exibirMenu = es.relatorioDoDia();            
             break;
 
