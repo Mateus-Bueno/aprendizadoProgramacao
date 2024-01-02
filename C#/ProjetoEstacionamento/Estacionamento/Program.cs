@@ -5,6 +5,8 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 Funcionarios funcionarios = new Funcionarios();
 
+
+//Invoca a configuração inicial do estacionamento
 bool inicializadorEstacionamento = true;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;

@@ -30,7 +30,7 @@ namespace Estacionamento.Services
 
             try
             {   
-                VerificarCadastro(placa);
+                VerificarPlaca(placa);
 
                 veiculos.Add(placa);
             }   
@@ -57,10 +57,12 @@ namespace Estacionamento.Services
             Console.Clear();
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("Digite a placa do veículo para remover:");
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("-------------------------------------------"); 
 
-            string placa = "";
-            placa = Console.ReadLine();
+            string placa = Console.ReadLine();
+
+            VerificarPlaca(placa);
+            
             
             // Verifica se o veículo existe
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
@@ -88,6 +90,15 @@ namespace Estacionamento.Services
                     Console.WriteLine("Ocorreu um erro ao informar o valor.");
                     Console.WriteLine("Por favor tente novamente");
                 }
+                catch (PlacaVaziaException)
+                {
+                    Console.WriteLine("\nNenhuma placa inserida. Por favor tente novamente\n");
+                }
+                catch (PlacaInvalidaException)
+                {
+                    Console.WriteLine("\nFormato de placa inválido.");
+                    Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
+                }  
                 
             }
             else
@@ -99,42 +110,33 @@ namespace Estacionamento.Services
         public void ListarVeiculos()
         {
             Console.Clear();
+            Console.WriteLine("--------------------------------");
 
             // Verifica se há veículos no estacionamento
             if (veiculos.Any())
-            {
-                Console.WriteLine("--------------------------------");
-                Console.WriteLine("Os veículos estacionados são:");
-                
+            {                
+                Console.WriteLine("Os veículos estacionados são:");                
 
                 foreach(string placa in veiculos)
                 {   
                     Console.WriteLine(placa.ToUpper().Insert(3, "-"));
                 }
-
-                Console.WriteLine("--------------------------------");
             }
             
             else
             {
                 Console.WriteLine("Não há veículos estacionados.");
-                Console.WriteLine("--------------------------------");
             }
+
+            Console.WriteLine("--------------------------------");
         }
 
-        public bool VerificarCadastro(string placa)
+        public void VerificarPlaca(string placa)
         {
-
-            bool verificador = true;
 
             if(string.IsNullOrWhiteSpace(placa))
             {
                 throw new PlacaVaziaException();
-            }
-
-            if(placa.Length > 8)
-            {
-                throw new PlacaInvalidaException();
             }
 
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
@@ -142,13 +144,13 @@ namespace Estacionamento.Services
                 throw new CarroJaEstacionadoException();
             }
 
+            // Define os formatos de placa considerados válidos
             Regex padraoMercosul = new Regex("^[a-zA-Z]{3}[0-9][a-zA-Z]{1}[0-9]{2}$");
             Regex padraoNormal = new Regex("^[a-zA-Z]{3}[0-9]{4}$");
 
 
             if(padraoMercosul.IsMatch(placa) || padraoNormal.IsMatch(placa))
             {
-                return verificador;
             }
 
             else
@@ -159,12 +161,13 @@ namespace Estacionamento.Services
 
         public bool relatorioDoDia()
         {
+            Console.Clear();
+            
             bool status;
             Funcionarios _func = new Funcionarios();
 
             try
             {
-                Console.Clear();
                 if(veiculos.Any())
                 {
                     throw new EstacionamentoNaoVazioException();

@@ -129,13 +129,13 @@ namespace Estacionamento.Services
 
             catch(NomeDeUsuarioVazioException)  
             {
-                Console.WriteLine("O nome de usuário não pode ser vazio!!");
+                Console.WriteLine("O nome de usuário não pode ser vazio!");
                 return false;
             }
 
             catch(SenhaVaziaException)
             {
-                Console.WriteLine("A senha não pode ser vazia!!");
+                Console.WriteLine("A senha não pode ser vazia!");
                 return false;
             }
         }
