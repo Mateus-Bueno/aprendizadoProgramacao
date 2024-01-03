@@ -13,23 +13,24 @@ class Program
         string comandos = Console.ReadLine();
 
 
-        for(int i = 0; i < comandos.Length; i++)
+        foreach(char comando in comandos)
         {
-            if(comandos[i].Equals('A'))
+            if(comando.Equals('A'))
             {
                 robo.Acelerar();
             }
 
-            else if(comandos[i].Equals('D'))
+            else if(comando.Equals('D'))
             {
                 robo.Desacelerar();
             }
             
             else
             {
-                Console.WriteLine($"O {i} caracter é inválido");
+                Console.WriteLine($"O {comando} caracter é inválido");
             }
         }
+
 
         Console.WriteLine(robo.VelocidadeAtual);
 
