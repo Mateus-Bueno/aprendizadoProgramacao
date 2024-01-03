@@ -29,10 +29,16 @@ namespace Estacionamento.Services
             string placa = Console.ReadLine();
 
             try
-            {   
-                VerificarPlaca(placa);
-
-                veiculos.Add(placa);
+            {
+                if(veiculos.Contains(placa))
+                {
+                    Console.WriteLine("\nEste carro já se encontra no estacionamento.");
+                }
+                else
+                {
+                    VerificarPlaca(placa);
+                    veiculos.Add(placa);
+                }
             }   
 
             catch (PlacaVaziaException)
@@ -44,31 +50,28 @@ namespace Estacionamento.Services
             {
                 Console.WriteLine("\nFormato de placa inválido.");
                 Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
-            }      
-
-            catch (CarroJaEstacionadoException)
-            {
-                Console.WriteLine("\nEste carro já se encontra no estacionamento.");
-            }   
+            }       
         }
 
-        public void RemoverVeiculo()
+        public bool RemoverVeiculo()
         {
             Console.Clear();
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("Digite a placa do veículo para remover:");
-            Console.WriteLine("-------------------------------------------"); 
-
-            string placa = Console.ReadLine();
-
-            VerificarPlaca(placa);
-            
+            Console.WriteLine("-------------------------------------------");
             
             // Verifica se o veículo existe
-            if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
-            {
                 try
                 {
+                    string placa = Console.ReadLine();
+                    VerificarPlaca(placa);
+
+                    if(!veiculos.Contains(placa))
+                    {
+                        Console.WriteLine("Este veículo não se encontra aqui");
+                        return false;
+                    }
+
                     Console.Clear();
                     Console.WriteLine("----------------------------------------------------------------------");
                     Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
@@ -84,27 +87,25 @@ namespace Estacionamento.Services
 
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
                     lucroDoDia += valorTotal;
+                    return true;
                 }
-                catch (FormatException)
+                catch(FormatException)
                 {
                     Console.WriteLine("Ocorreu um erro ao informar o valor.");
                     Console.WriteLine("Por favor tente novamente");
+                    return false;
                 }
-                catch (PlacaVaziaException)
+                catch(PlacaVaziaException)
                 {
-                    Console.WriteLine("\nNenhuma placa inserida. Por favor tente novamente\n");
+                    Console.WriteLine("Nenhuma placa inserida. Por favor tente novamente");
+                    return false;
                 }
-                catch (PlacaInvalidaException)
+                catch(PlacaInvalidaException)
                 {
                     Console.WriteLine("\nFormato de placa inválido.");
                     Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
-                }  
-                
-            }
-            else
-            {
-                Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
-            }
+                    return false;
+                }
         }
 
         public void ListarVeiculos()
@@ -139,11 +140,11 @@ namespace Estacionamento.Services
                 throw new PlacaVaziaException();
             }
 
-            if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
+            if(placa.Length != 7)
             {
-                throw new CarroJaEstacionadoException();
+                throw new PlacaInvalidaException();
             }
-
+            
             // Define os formatos de placa considerados válidos
             Regex padraoMercosul = new Regex("^[a-zA-Z]{3}[0-9][a-zA-Z]{1}[0-9]{2}$");
             Regex padraoNormal = new Regex("^[a-zA-Z]{3}[0-9]{4}$");
@@ -152,19 +153,17 @@ namespace Estacionamento.Services
             if(padraoMercosul.IsMatch(placa) || padraoNormal.IsMatch(placa))
             {
             }
-
             else
             {
                 throw new PlacaInvalidaException();
             }
         }
 
-        public bool relatorioDoDia()
+        public bool RelatorioDoDia()
         {
             Console.Clear();
             
             bool status;
-            Funcionarios _func = new Funcionarios();
 
             try
             {
@@ -175,7 +174,7 @@ namespace Estacionamento.Services
 
                 Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine($"O total arrecadado hoje foi {lucroDoDia:C}.");
-                Console.WriteLine($"Funcionário responsável: {_func.verificarUsuario()}");
+                Console.WriteLine($"Funcionário responsável: {Funcionarios.verificarUsuario()}");
                 Console.WriteLine("-------------------------------------------------");
                 status = false;
             }
@@ -186,6 +185,29 @@ namespace Estacionamento.Services
             }
             
             return status;
+        }
+
+        public void MenuDeUsuario()
+        {
+            Console.Clear();
+            Console.WriteLine($"Usuário atual: {Funcionarios.verificarUsuario()}");
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Digite sua opção:");
+            Console.WriteLine("1 - Cadastrar novo usuário");
+            Console.WriteLine("2 - Alternar usuário atual");
+            Console.WriteLine("------------------------------------------");
+            switch(Console.ReadLine())
+            {
+                case "1":
+                    Funcionarios.CadastrarNovoUsuario();
+                    break;
+                case "2":
+                    Funcionarios.RealizarLogin();
+                    break;
+                default:
+                    Console.WriteLine("\nOpção inválida");
+                    break;
+            }
         }
     }
 }

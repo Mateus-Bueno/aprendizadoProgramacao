@@ -3,9 +3,6 @@
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-Funcionarios funcionarios = new Funcionarios();
-
-
 //Invoca a configuração inicial do estacionamento
 bool inicializadorEstacionamento = true;
 decimal precoInicial = 0;
@@ -58,7 +55,6 @@ while (exibirMenu)
     switch (Console.ReadLine())
     {
         case "1":
-            Console.Clear();
             es.AdicionarVeiculo();
             break;
 
@@ -71,29 +67,11 @@ while (exibirMenu)
             break;
 
         case "4":
-            Console.Clear();
-            Console.WriteLine("------------------------------------------");
-            Console.WriteLine($"Usuário atual: {funcionarios.verificarUsuario()}\n");
-            Console.WriteLine("Digite sua opção:");
-            Console.WriteLine("1 - Cadastrar novo usuário");
-            Console.WriteLine("2 - Alternar usuário atual");
-            Console.WriteLine("------------------------------------------");
-            switch(Console.ReadLine())
-            {
-                case "1":
-                    funcionarios.CadastrarNovoUsuario();
-                    break;
-                case "2":
-                    funcionarios.RealizarLogin();
-                    break;
-                default:
-                    Console.WriteLine("\nOpção inválida");
-                    break;
-            }
+            es.MenuDeUsuario();
             break;
 
         case "5":
-            exibirMenu = es.relatorioDoDia();            
+            exibirMenu = es.RelatorioDoDia();            
             break;
 
         default:

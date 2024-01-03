@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {}
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\estacionamento\\Estacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj": {
+    "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\estacionamento\\Estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\estacionamento\\Estacionamento.csproj",
         "projectName": "Estacionamento",
-        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\Estacionamento.csproj",
+        "projectPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\estacionamento\\Estacionamento.csproj",
         "packagesPath": "C:\\Users\\Mateus Bueno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\Estacionamento\\obj\\",
+        "outputPath": "C:\\Users\\Mateus Bueno\\OneDrive\\Área de Trabalho\\Developing\\C#\\ProjetoEstacionamento\\estacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus Bueno\\AppData\\Roaming\\NuGet\\NuGet.Config"
