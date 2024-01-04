@@ -12,6 +12,7 @@ namespace Estacionamento.Services
         private decimal precoInicial = 0;
         private decimal precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
+        //private Dictionary<string, decimal> valorArrecadado = new Dictionary<string, decimal>();
         private List<string> veiculos = new List<string>();
 
         public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
@@ -132,6 +133,7 @@ namespace Estacionamento.Services
             Console.WriteLine("--------------------------------");
         }
 
+        //Faz validações quanto a placa informada e retorna um erro caso exista
         public void VerificarPlaca(string placa)
         {
 

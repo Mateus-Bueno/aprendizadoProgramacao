@@ -11,9 +11,14 @@ using System.Text.RegularExpressions;
 
 namespace Estacionamento.Services
 {
+
+    //Funciona como um registro de funcionário capaz de informar quem foi o responsável
+    //pelo estacionamento
     public static class Funcionarios
     {
         private static string usuarioAtual;
+        private static string usuarioID;
+        private static int totalDeFuncionarios = File.ReadLines("LoginInfo.txt").Count();
 
         public static void RealizarLogin()
         {
@@ -24,8 +29,8 @@ namespace Estacionamento.Services
                 Console.WriteLine("----------------------------");
                 Console.WriteLine("Insira o nome de usuário:");
                 Console.WriteLine("----------------------------");
-                string usuario = Console.ReadLine();
-                if(string.IsNullOrWhiteSpace(usuario))
+                string nomeDeUsuario = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(nomeDeUsuario))
                 {
                     throw new NomeDeUsuarioVazioException();
                 }
@@ -37,11 +42,12 @@ namespace Estacionamento.Services
                     throw new SenhaVaziaException();
                 }
 
-                if(verificarInformacoesDeLogin(usuario, senha))
+                if(verificarInformacoesDeLogin(nomeDeUsuario, senha))
                 {
-                    usuarioAtual = usuario;
+                    usuarioAtual = nomeDeUsuario;
+                    Console.Clear();
                     Console.WriteLine("Login Realizado com sucesso");
-                    Console.WriteLine($"Bem vindo(a) {usuario.ToUpper()}!");
+                    Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
 
                 }
             }
@@ -69,6 +75,7 @@ namespace Estacionamento.Services
 
             string nomeDeUsuario;
             string senha;
+            Regex padraoNomeDeUsuario = new Regex("^[^0-9]$");
             Regex padraoSenha = new Regex("^[0-9]{4}$");
 
             try
@@ -84,11 +91,21 @@ namespace Estacionamento.Services
                     throw new NomeDeUsuarioVazioException();
                 }
 
+                if(Regex.IsMatch(nomeDeUsuario, @"\d"))
+                {
+                    throw new NomeDeUsuarioInvalidoException();
+                }
+
                 using(StreamReader sr = new StreamReader("LoginInfo.txt"))
                 {
-                    if(sr.ReadToEnd().Contains(nomeDeUsuario.ToLower()))
+                    while(!sr.EndOfStream)
                     {
-                        throw new NomeDeUsuarioJaUsadoException();
+                        string[] dadosDoUsuario = sr.ReadLine().Split('|');
+
+                        if(dadosDoUsuario[0] == nomeDeUsuario.ToUpper())
+                        {
+                            throw new NomeDeUsuarioJaUsadoException();
+                        }
                     }
                 }
 
@@ -108,7 +125,7 @@ namespace Estacionamento.Services
 
                 using(StreamWriter sr = File.AppendText("LoginInfo.txt"))
                 {
-                    sr.WriteLine($"{nomeDeUsuario}|{senha}");                    
+                    sr.WriteLine($"{nomeDeUsuario}|{senha}|0{totalDeFuncionarios}");                 
                 }
 
                 Console.WriteLine("Deseja que este seja o usuário atual? s/n");
@@ -116,8 +133,7 @@ namespace Estacionamento.Services
                 {
                     case "s":
                         usuarioAtual = nomeDeUsuario;
-                        break;
-                    
+                        break;                    
                     case "n":
                         break;
                     default:
@@ -129,7 +145,12 @@ namespace Estacionamento.Services
             {
                 Console.WriteLine("\nNão foi possivel finalizar o cadastro");
                 Console.WriteLine("Este nome de usuário já está sendo usado!");
-            }         
+            }
+
+            catch(NomeDeUsuarioInvalidoException)
+            {
+                Console.WriteLine("O nome de usuário deve conter apenas letras!");
+            }
 
             catch(NomeDeUsuarioVazioException)  
             {
@@ -151,7 +172,7 @@ namespace Estacionamento.Services
         {
             if(string.IsNullOrWhiteSpace(usuarioAtual))
             {
-                return "";
+                return null;
                 
             }
             else
@@ -161,20 +182,18 @@ namespace Estacionamento.Services
             
         }
 
-        public static bool verificarInformacoesDeLogin(string usuario, string senha)
+        public static bool verificarInformacoesDeLogin(string nomeDeUsuario, string senha)
         {
             
             using(StreamReader sr = new StreamReader("LoginInfo.txt"))
             {
-                sr.BaseStream.Position = 0;
-
                 while(!sr.EndOfStream)
                 {
                     string[] dadosDoUsuario = sr.ReadLine().Split('|');
 
-                    if(dadosDoUsuario[0] == usuario.ToUpper() && dadosDoUsuario[1] == senha)
-                    {   
-                        Console.Clear();                        
+                    if(dadosDoUsuario[0] == nomeDeUsuario.ToUpper() && dadosDoUsuario[1] == senha)
+                    {
+                        usuarioID = dadosDoUsuario[2];
                         return true;
                     }
                 }
@@ -182,5 +201,7 @@ namespace Estacionamento.Services
                 throw new InformacoesDeLoginIncorretasException();
             }
         }
+
+        
     }
 }

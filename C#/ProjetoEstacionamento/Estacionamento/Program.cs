@@ -36,7 +36,6 @@ while(inicializadorEstacionamento);
 // Instancia a classe Estacionamento, já com os valores obtidos anteriormente
 EstacionamentoImp es = new EstacionamentoImp(precoInicial, precoPorHora);
 
-string opcao = string.Empty;
 bool exibirMenu = true;
 
 // Realiza o loop do menu
