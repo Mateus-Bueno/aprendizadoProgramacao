@@ -11,10 +11,9 @@ namespace Estacionamento.Services
     {
         private decimal precoInicial = 0, precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
-        public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
         private decimal lucroNaoRegistrado = 0;
+        public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
         public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>();
-
         private List<string> veiculos = new List<string>();
 
         public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
@@ -133,15 +132,16 @@ namespace Estacionamento.Services
 
                     Console.Clear();
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
+
                     lucroDoDia += valorTotal;
 
-                    if(Funcionarios.verificarUsuario() == null)
+                    if(Funcionarios.VerificarUsuario() == null)
                     {
                         lucroNaoRegistrado += valorTotal;
                     }
                     else
                     {
-                        lucroResponsavel[Funcionarios.verificarUsuario()] += valorTotal;
+                        lucroResponsavel[Funcionarios.VerificarUsuario()] += valorTotal;
                     }
 
                     
@@ -277,7 +277,7 @@ namespace Estacionamento.Services
         public void MenuDeUsuario()
         {
             Console.Clear();
-            Console.WriteLine($"Usuário atual: {Funcionarios.verificarUsuario()}");
+            Console.WriteLine($"Usuário atual: {Funcionarios.VerificarUsuario()}");
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Digite sua opção:");
             Console.WriteLine("1 - Cadastrar novo usuário");

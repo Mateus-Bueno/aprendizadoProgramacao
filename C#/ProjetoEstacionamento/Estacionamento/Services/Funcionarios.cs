@@ -40,7 +40,7 @@ namespace Estacionamento.Services
                     throw new SenhaVaziaException();
                 }
 
-                if(verificarInformacoesDeLogin(nomeDeUsuario, senha))
+                if(VerificarInformacoesDeLogin(nomeDeUsuario, senha))
                 {
                     usuarioAtual = nomeDeUsuario;
                     Console.Clear();
@@ -166,7 +166,7 @@ namespace Estacionamento.Services
             }
         }
 
-        public static string verificarUsuario()
+        public static string VerificarUsuario()
         {
             if(string.IsNullOrWhiteSpace(usuarioAtual))
             {
@@ -180,7 +180,7 @@ namespace Estacionamento.Services
             
         }
 
-        public static bool verificarInformacoesDeLogin(string nomeDeUsuario, string senha)
+        public static bool VerificarInformacoesDeLogin(string nomeDeUsuario, string senha)
         {
             
             using(StreamReader sr = new StreamReader("LoginInfo.txt"))
