@@ -6,6 +6,16 @@ Este projeto foi desenvolvido com a tecnologia C# a partir das seguintes instru�
 
 O projeto para entrega pode ser acessado [Aqui](https://github.com/Mateus-Bueno/Trilha.NET-Fundamentos-Desafio)
 
+# Índice
+* [Informações sobre o projeto](#informações-sobre-o-projeto)
+  
+  * [EstacionamentoImp](#estacionamentoimp)
+ 
+  * [Funcionarios](#funcionarios)
+
+* [Pasta de Exceptions](#pasta-de-exceptions)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Principais modificações
 Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em uma aplicação real de estacionamento e tentando torna-lo mais robusto e informativo. Com esse intuito eu inclui:
