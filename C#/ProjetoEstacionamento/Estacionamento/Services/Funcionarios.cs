@@ -17,9 +17,7 @@ namespace Estacionamento.Services
     public static class Funcionarios
     {
         private static string usuarioAtual;
-        private static string usuarioID;
-        private static int totalDeFuncionarios = File.ReadLines("LoginInfo.txt").Count();
-
+        
         public static void RealizarLogin()
         {
             Console.Clear();
@@ -48,7 +46,6 @@ namespace Estacionamento.Services
                     Console.Clear();
                     Console.WriteLine("Login Realizado com sucesso");
                     Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
-
                 }
             }
 
@@ -75,7 +72,6 @@ namespace Estacionamento.Services
 
             string nomeDeUsuario;
             string senha;
-            Regex padraoNomeDeUsuario = new Regex("^[^0-9]$");
             Regex padraoSenha = new Regex("^[0-9]{4}$");
 
             try
@@ -125,7 +121,7 @@ namespace Estacionamento.Services
 
                 using(StreamWriter sr = File.AppendText("LoginInfo.txt"))
                 {
-                    sr.WriteLine($"{nomeDeUsuario}|{senha}|0{totalDeFuncionarios}");                 
+                    sr.WriteLine($"{nomeDeUsuario}|{senha}");                 
                 }
 
                 Console.WriteLine("Deseja que este seja o usuário atual? s/n");
@@ -193,7 +189,6 @@ namespace Estacionamento.Services
 
                     if(dadosDoUsuario[0] == nomeDeUsuario.ToUpper() && dadosDoUsuario[1] == senha)
                     {
-                        usuarioID = dadosDoUsuario[2];
                         return true;
                     }
                 }

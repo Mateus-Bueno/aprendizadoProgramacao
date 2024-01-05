@@ -8,6 +8,16 @@ bool inicializadorEstacionamento = true;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
+using(StreamReader sr = new StreamReader("LoginInfo.txt"))
+{
+    while(sr.EndOfStream == false)
+    {
+        string[] dadosDoUsuario = sr.ReadLine().Split("|");
+        EstacionamentoImp.lucroResponsavel.Add(dadosDoUsuario[0], 0); 
+    }
+}
+
+
 do
 {
     Console.Clear();

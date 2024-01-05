@@ -9,10 +9,12 @@ namespace Estacionamento.Services
 {
     public class EstacionamentoImp
     {
-        private decimal precoInicial = 0;
-        private decimal precoPorHora = 0;
+        private decimal precoInicial = 0, precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
-        //private Dictionary<string, decimal> valorArrecadado = new Dictionary<string, decimal>();
+        public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
+        private decimal lucroNaoRegistrado = 0;
+
+
         private List<string> veiculos = new List<string>();
 
         public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
@@ -56,14 +58,16 @@ namespace Estacionamento.Services
 
         public bool RemoverVeiculo()
         {
-            Console.Clear();
-            Console.WriteLine("-------------------------------------------");
-            Console.WriteLine("Digite a placa do veículo para remover:");
-            Console.WriteLine("-------------------------------------------");
+
             
             // Verifica se o veículo existe
                 try
                 {
+                    Console.Clear();
+                    Console.WriteLine("-------------------------------------------");
+                    Console.WriteLine("Digite a placa do veículo para remover:");
+                    Console.WriteLine("-------------------------------------------");
+
                     string placa = Console.ReadLine();
                     VerificarPlaca(placa);
 
@@ -84,10 +88,24 @@ namespace Estacionamento.Services
                     horas = Convert.ToInt32(Console.ReadLine());
                     valorTotal = precoInicial + precoPorHora * horas;
 
+                    
+                    
+
                     veiculos.Remove(placa);
 
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
                     lucroDoDia += valorTotal;
+
+                    if(Funcionarios.verificarUsuario() == null)
+                    {
+                        lucroNaoRegistrado += valorTotal;
+                    }
+                    else
+                    {
+                        lucroResponsavel[Funcionarios.verificarUsuario()] += valorTotal;
+                    }
+
+                    
                     return true;
                 }
                 catch(FormatException)
@@ -175,9 +193,22 @@ namespace Estacionamento.Services
                 }
 
                 Console.WriteLine("-------------------------------------------------");
-                Console.WriteLine($"O total arrecadado hoje foi {lucroDoDia:C}.");
-                Console.WriteLine($"Funcionário responsável: {Funcionarios.verificarUsuario()}");
+                foreach(var funcionario in EstacionamentoImp.lucroResponsavel)
+                {
+                    if(funcionario.Value != 0)
+                    {
+                        Console.WriteLine($"{funcionario.Key} finalizou {funcionario.Value:C} em pagamentos");
+                    }
+                }
+                Console.WriteLine($"{lucroNaoRegistrado:C} em pagamentos não registraram operador");
                 Console.WriteLine("-------------------------------------------------");
+                Console.ReadKey();
+
+                Console.Clear();
+                Console.WriteLine("-------------------------------------------------");
+                Console.WriteLine($"O total arrecadado hoje foi {lucroDoDia:C}.");
+                Console.WriteLine("-------------------------------------------------");
+                
                 status = false;
             }
             catch (EstacionamentoNaoVazioException)
