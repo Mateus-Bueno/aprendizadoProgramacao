@@ -65,9 +65,9 @@ A única propriedade inicializada no escopo geral da classe é a string "usuario
   
 * **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada aos padrões, inclui os dados do novo usuário no arquivo de registro .txt.
   
-* **verificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
+* **VerificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
   
-* **verificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
+* **VerificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
