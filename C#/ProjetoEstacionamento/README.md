@@ -1,4 +1,4 @@
-# Projeto Estacionamento
+# 📚Projeto Estacionamento
 ### Contexto e escopo do projeto
 
 Este projeto foi desenvolvido com a tecnologia C# a partir das seguintes instruções do curso DecolaTech Avanade, da Digital Innovation One:
@@ -8,7 +8,7 @@ O projeto para entrega pode ser acessado [Aqui](https://github.com/Mateus-Bueno/
 
 
 ### Principais modificações
-Tentando não fugir do escopo trazido pela DIO, eu alterei o sistema na tentativa de torna-lo mais robusto e informativo. Com esse intuito eu inclui:
+Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em uma aplicação real de estacionamento e tentando torna-lo mais robusto e informativo. Com esse intuito eu inclui:
 * Registro de funcionarios do estacionamento, tendo em mente um possível calculo de comissão ou contagem de horas trabalhadas
 * Relatório completo ao encerrar o programa, com informações que facilitem a contabilidade de lucros
 * Verificações para validar a autenticidade de dados recebidos
@@ -16,11 +16,11 @@ Tentando não fugir do escopo trazido pela DIO, eu alterei o sistema na tentativ
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Informações sobre o projeto
+# 📚Informações sobre o projeto
 
 As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionarios", nesta seção eu irei detalhar mais suas propriedades, métodos e o intuito de cada escolha
 
-## EstacionamentoImp
+## 🚗EstacionamentoImp
 
 ### Propriedades
 
@@ -50,3 +50,43 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
 * **MenuDeUsuario**: Oferece opções de cadastro ou login aos funcionários que utilizam o sistema.
   
 * **RelatorioDoDia**: Gera e informa um relatório dividido em três partes, sendo a primeira um relatório do valor gerado durante o expediente de cada funcionário, a segunda com o valor pago em cada forma de pagamento e a terceira informando o lucro total do dia.
+
+## 👩🏽‍💼Funcionarios
+
+É uma classe estatica, de forma a tornar mais facil o acesso de seus métodos e propriedades
+
+### Propriedades
+
+A única propriedade inicializada no escopo geral da classe é a string "usuarioAtual", utilizada na interface do menu de usuário e na elaboração do relatório.
+
+### Métodos
+
+* **RealizarLogin**: Recebe os dados de entrada "nomeDeUsuario" e "senha", depois manda essas informações para serem verificadas, em caso de sucesso atualiza a string usuarioAtual para o nome de usuario informado.
+  
+* **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada aos padrões, inclui os dados do novo usuário no arquivo de registro .txt.
+  
+* **verificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
+  
+* **verificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 📚Pasta de Exceptions
+
+Inclui as principais falhas encontradas por mim durante o desenvolvimento e teste do projeto, além de exceptions utilizadas para construir algumas das lógicas do sistema
+
+## ❗EstacionamentoImpExceptions
+
+* **CarroJaEstacionadoException**: Lançada pelo método "AdicionarVeiculo" caso a placa inserida já esteja no estacionamento.
+
+* **EstacionamentoNaoVazioException**: Lançada pelo método "RelatorioDoDia" para impossibilitar o encerramento enquanto houverem carros estacionados.
+
+* **PlacaInvalidaException** e **PlacaVaziaException**: Lançadas pelo método "VerificarPlaca" durante a validação da placa informada.
+
+## ❗FuncionariosException
+
+* **InformacoesDeLoginIncorretasException**: Lançada pelo método "verificarInformacoesDeLogin", caso o arquivo .txt não contenha correspondência com os dados informados.
+
+* **NomeDeUsuarioInvalidoException**, **NomeDeUsuarioJaUsadoException** e **SenhaInvalidaException**: Lançadas pelo método "CadastrarUsuário" caso os dados de entrada não se adequem aos padrões estabelecidos, ou no caso de o nome de usuário informado já existir no registro.
+
+* **NomeDeUsuarioVazioException** e **SenhaVaziaException**: Lançadas pelo método "RealizarLogin" caso as entradas sejam espaços em branco ou nulas. 
