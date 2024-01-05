@@ -17,7 +17,7 @@ namespace Estacionamento.Services
     public static class Funcionarios
     {
         private static string usuarioAtual;
-        
+
         public static void RealizarLogin()
         {
             Console.Clear();
@@ -123,6 +123,8 @@ namespace Estacionamento.Services
                 {
                     sr.WriteLine($"{nomeDeUsuario}|{senha}");                 
                 }
+
+                EstacionamentoImp.lucroResponsavel.Add(nomeDeUsuario, 0);
 
                 Console.WriteLine("Deseja que este seja o usuário atual? s/n");
                 switch(Console.ReadLine())

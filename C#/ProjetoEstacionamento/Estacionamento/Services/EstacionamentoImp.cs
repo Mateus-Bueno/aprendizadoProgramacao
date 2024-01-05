@@ -13,7 +13,7 @@ namespace Estacionamento.Services
         private decimal lucroDoDia { get; set; } = 0;
         public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
         private decimal lucroNaoRegistrado = 0;
-
+        public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>();
 
         private List<string> veiculos = new List<string>();
 
@@ -21,6 +21,19 @@ namespace Estacionamento.Services
         {
             this.precoInicial = precoInicial;
             this.precoPorHora = precoPorHora;
+
+            using(StreamReader sr = new StreamReader("LoginInfo.txt"))
+            {
+                while(sr.EndOfStream == false)
+                {
+                    string[] dadosDoUsuario = sr.ReadLine().Split("|");
+                    lucroResponsavel.Add(dadosDoUsuario[0], 0); 
+                }
+            }
+
+            formaDePagamento.Add("Dinheiro", 0);
+            formaDePagamento.Add("Débito", 0);
+            formaDePagamento.Add("Pix", 0);
         }
 
         public void AdicionarVeiculo()
@@ -88,11 +101,37 @@ namespace Estacionamento.Services
                     horas = Convert.ToInt32(Console.ReadLine());
                     valorTotal = precoInicial + precoPorHora * horas;
 
-                    
+                    Console.Clear();
+                    Console.WriteLine("----------------------------------------------------------------------");
+                    Console.WriteLine($"O valor total é {valorTotal:C}, selecione a forma de pagamento:");
+                    Console.WriteLine("1 - Dinheiro");
+                    Console.WriteLine("2 - Débito");
+                    Console.WriteLine("3 - Pix");
+                    Console.WriteLine("----------------------------------------------------------------------");
+
+                    switch(Console.ReadLine())
+                    {
+                        case "1":
+                            formaDePagamento["Dinheiro"] += valorTotal;
+                            break;
+                        
+                        case "2":
+                            formaDePagamento["Débito"] += valorTotal;
+                            break;
+                        
+                        case "3":
+                            formaDePagamento["Pix"] += valorTotal;
+                            break;
+                        
+                        default:
+                            Console.WriteLine("Opção inválida, a operação será encerrada");
+                            return false;
+                    }
                     
 
                     veiculos.Remove(placa);
 
+                    Console.Clear();
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
                     lucroDoDia += valorTotal;
 
@@ -182,6 +221,11 @@ namespace Estacionamento.Services
         public bool RelatorioDoDia()
         {
             Console.Clear();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Gerando Relatório");
+            Console.WriteLine("Pressione qualquer tecla para continuar");
+            Console.WriteLine("------------------------------------------------");
+            Console.ReadKey();
             
             bool status;
 
@@ -192,8 +236,9 @@ namespace Estacionamento.Services
                     throw new EstacionamentoNaoVazioException();
                 }
 
+                Console.Clear();
                 Console.WriteLine("-------------------------------------------------");
-                foreach(var funcionario in EstacionamentoImp.lucroResponsavel)
+                foreach(var funcionario in lucroResponsavel)
                 {
                     if(funcionario.Value != 0)
                     {
@@ -201,6 +246,15 @@ namespace Estacionamento.Services
                     }
                 }
                 Console.WriteLine($"{lucroNaoRegistrado:C} em pagamentos não registraram operador");
+                Console.WriteLine("-------------------------------------------------");
+                Console.ReadKey();
+
+                Console.Clear();
+                Console.WriteLine("-------------------------------------------------");
+                Console.WriteLine("Foi arrecadado em pagamentos:");
+                Console.WriteLine($"{formaDePagamento["Dinheiro"]:C} em dinheiro");
+                Console.WriteLine($"{formaDePagamento["Débito"]:C} em Débito");
+                Console.WriteLine($"{formaDePagamento["Pix"]:C} em Pix");
                 Console.WriteLine("-------------------------------------------------");
                 Console.ReadKey();
 
