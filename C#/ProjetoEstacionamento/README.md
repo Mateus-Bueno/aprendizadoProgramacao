@@ -49,4 +49,4 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
   
 * **MenuDeUsuario**: Oferece opções de cadastro ou login aos funcionários que utilizam o sistema.
   
-* **RelatorioDoDia**: Gera e informa um relatório dividido em três partes
+* **RelatorioDoDia**: Gera e informa um relatório dividido em três partes, sendo a primeira um relatório do valor gerado durante o expediente de cada funcionário, a segunda com o valor pago em cada forma de pagamento e a terceira informando o lucro total do dia.
