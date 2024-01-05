@@ -6,7 +6,7 @@ Este projeto foi desenvolvido com a tecnologia C# a partir das seguintes instru�
 
 O projeto para entrega pode ser acessado [Aqui](https://github.com/Mateus-Bueno/Trilha.NET-Fundamentos-Desafio)
 
-# Índice
+# Sumário
 * [Informações sobre o projeto](#informações-sobre-o-projeto)
   
   * [EstacionamentoImp](#estacionamentoimp)
@@ -61,6 +61,8 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
   
 * **RelatorioDoDia**: Gera e informa um relatório dividido em três partes, sendo a primeira um relatório do valor gerado durante o expediente de cada funcionário, a segunda com o valor pago em cada forma de pagamento e a terceira informando o lucro total do dia.
 
+[Voltar ao sumário](#Sumário)
+
 ## 👩🏽‍💼Funcionarios
 
 É uma classe estatica, de forma a tornar mais facil o acesso de seus métodos e propriedades
@@ -78,6 +80,8 @@ A única propriedade inicializada no escopo geral da classe é a string "usuario
 * **VerificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
   
 * **VerificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
+
+[Voltar ao sumário](#Sumário)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -99,4 +103,6 @@ Inclui as principais falhas encontradas por mim durante o desenvolvimento e test
 
 * **NomeDeUsuarioInvalidoException**, **NomeDeUsuarioJaUsadoException** e **SenhaInvalidaException**: Lançadas pelo método "CadastrarUsuário" caso os dados de entrada não se adequem aos padrões estabelecidos, ou no caso de o nome de usuário informado já existir no registro.
 
-* **NomeDeUsuarioVazioException** e **SenhaVaziaException**: Lançadas pelo método "RealizarLogin" caso as entradas sejam espaços em branco ou nulas. 
+* **NomeDeUsuarioVazioException** e **SenhaVaziaException**: Lançadas pelo método "RealizarLogin" caso as entradas sejam espaços em branco ou nulas.
+
+[Voltar ao sumário](#Sumário)
