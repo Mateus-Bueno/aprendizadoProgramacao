@@ -18,8 +18,8 @@ O projeto para entrega pode ser acessado [Aqui](https://github.com/Mateus-Bueno/
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Principais modificações
-Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em uma aplicação real de estacionamento e tentando torna-lo mais robusto e informativo. Com esse intuito eu inclui:
-* Registro de funcionarios do estacionamento, tendo em mente um possível calculo de comissão ou contagem de horas trabalhadas
+Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em uma aplicação real de estacionamento e tentando torná-lo mais robusto e informativo. Com esse intuito eu inclui:
+* Registro de funcionários do estacionamento, tendo em mente um possível cálculo de comissão ou contagem de horas trabalhadas
 * Relatório completo ao encerrar o programa, com informações que facilitem a contabilidade de lucros
 * Verificações para validar a autenticidade de dados recebidos
 * Exceptions para tratar erros e evitar o interrompimento ou mal funcionamento do programa
@@ -30,7 +30,7 @@ Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em 
 
 As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionarios", nesta seção eu irei detalhar mais suas propriedades, métodos e o intuito de cada escolha
 
-![Diagrama de Classes do Projeto](https://github.com/Mateus-Bueno/aprendizadoProgramacao/blob/main/C%23/ProjetoEstacionamento/DiagramaDeClasses_ProjetoEstacionamento.png)
+![Diagrama de Classes do Projeto](DiagramaDeClasses_ProjetoEstacionamento.png)
 
 ## 🚗EstacionamentoImp
 
@@ -67,7 +67,7 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
 
 ## 👩🏽‍💼Funcionarios
 
-É uma classe estatica, de forma a tornar mais facil o acesso de seus métodos e propriedades
+É uma classe estática, de forma a tornar mais fácil o acesso de seus métodos e propriedades
 
 ### Propriedades
 
@@ -75,9 +75,9 @@ A única propriedade inicializada no escopo geral da classe é a string "usuario
 
 ### Métodos
 
-* **RealizarLogin**: Recebe os dados de entrada "nomeDeUsuario" e "senha", depois manda essas informações para serem verificadas, em caso de sucesso atualiza a string usuarioAtual para o nome de usuario informado.
+* **RealizarLogin**: Recebe os dados de entrada "nomeDeUsuario" e "senha", depois manda essas informações para serem verificadas, em caso de sucesso atualiza a string "usuarioAtual" para o nome de usuario informado.
   
-* **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada aos padrões, inclui os dados do novo usuário no arquivo de registro .txt.
+* **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada ao padrão estabelecido (quatro algarismos), inclui os dados do novo usuário no arquivo de registro .txt.
   
 * **VerificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
   
