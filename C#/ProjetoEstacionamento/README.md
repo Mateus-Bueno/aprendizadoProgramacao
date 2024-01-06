@@ -30,7 +30,7 @@ Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em 
 
 As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionarios", nesta seção eu irei detalhar mais suas propriedades, métodos e o intuito de cada escolha
 
-[Diagrama de Classes do Projeto](https://github.com/Mateus-Bueno/aprendizadoProgramacao/blob/main/C%23/ProjetoEstacionamento/DiagramaDeClasses_ProjetoEstacionamento.png)
+![Diagrama de Classes do Projeto](https://github.com/Mateus-Bueno/aprendizadoProgramacao/blob/main/C%23/ProjetoEstacionamento/DiagramaDeClasses_ProjetoEstacionamento.png)
 
 ## 🚗EstacionamentoImp
 
