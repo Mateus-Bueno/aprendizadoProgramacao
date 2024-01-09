@@ -93,8 +93,6 @@ Inclui as principais falhas encontradas por mim durante o desenvolvimento e test
 
 ## ❗EstacionamentoImpExceptions
 
-* **CarroJaEstacionadoException**: Lançada pelo método "AdicionarVeiculo" caso a placa inserida já esteja no estacionamento.
-
 * **EstacionamentoNaoVazioException**: Lançada pelo método "RelatorioDoDia" para impossibilitar o encerramento enquanto houverem carros estacionados.
 
 * **PlacaInvalidaException** e **PlacaVaziaException**: Lançadas pelo método "VerificarPlaca" durante a validação da placa informada.
