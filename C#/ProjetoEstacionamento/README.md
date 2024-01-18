@@ -4,7 +4,7 @@
 Este projeto foi desenvolvido com a tecnologia C# a partir das seguintes instruções do curso DecolaTech Avanade, da Digital Innovation One:
 > Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
 
-O projeto para entrega pode ser acessado [Aqui](https://github.com/Mateus-Bueno/Trilha.NET-Fundamentos-Desafio)
+O projeto para entrega pode ser acessado [Aqui](https://github.com/digitalinnovationone/trilha-net-fundamentos-desafio)
 
 # Sumário
 * [Informações sobre o projeto](#informações-sobre-o-projeto)
