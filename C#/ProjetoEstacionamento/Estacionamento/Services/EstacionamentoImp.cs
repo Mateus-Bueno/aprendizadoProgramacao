@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Estacionamento.Exceptions;
+using System.ComponentModel;
 
 namespace Estacionamento.Services
 {
@@ -12,12 +13,12 @@ namespace Estacionamento.Services
         private decimal precoInicial = 0, precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
         private decimal lucroNaoRegistrado = 0;
-        public static Dictionary<string, int> blocosEstacionamento = new Dictionary<string, int>()
+        public static Dictionary<string, List<string>> blocosEstacionamento = new Dictionary<string, List<string>>()
         {
-            {"E1", 5},
-            {"E2", 5},
-            {"E3", 5},
-            {"E4", 5}
+            {"E1", new List<string>()},
+            {"E2", new List<string>()},
+            {"E3", new List<string>()},
+            {"E4", new List<string>()}
         };
         private int capacidadeMaxima;
         public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
@@ -27,7 +28,6 @@ namespace Estacionamento.Services
             {"Débito", 0},
             {"Pix", 0} 
         };
-        private List<string> veiculos = new List<string>();
 
         public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
         {
@@ -37,21 +37,22 @@ namespace Estacionamento.Services
 
         public void AdicionarVeiculo()
         {
-            Console.Clear();
-            Console.WriteLine("------------------------------------------------");
-            Console.WriteLine("Digite a placa do veículo para estacionar:");
-            Console.WriteLine("------------------------------------------------");
-            string placa = Console.ReadLine();
-
             try
             {
-                if(veiculos.Contains(placa))
+                Console.Clear();
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("Digite a placa do veículo para estacionar:");
+                Console.WriteLine("------------------------------------------------");
+                string placa = Console.ReadLine();
+                VerificarPlaca(placa);
+
+                if(BuscarVeiculo(placa) != null)
                 {
                     Console.WriteLine("Este carro já se encontra no estacionamento.");
                 }
                 else
                 {
-                    VerificarPlaca(placa);
+                    
 
                     bool verifica;
 
@@ -60,16 +61,16 @@ namespace Estacionamento.Services
                         verifica = true;
                         Console.Clear();
                         Console.WriteLine("Informe o bloco onde este veículo irá estacionar");
-                        Console.WriteLine($"E1: {blocosEstacionamento["E1"]} vagas     E3: {blocosEstacionamento["E3"]} vagas");
-                        Console.WriteLine($"E2: {blocosEstacionamento["E2"]} vagas     E4: {blocosEstacionamento["E4"]} vagas\n");
+                        Console.WriteLine($"E1: {5 - blocosEstacionamento["E1"].Count} vagas     E3: {5 - blocosEstacionamento["E3"].Count} vagas");
+                        Console.WriteLine($"E2: {5 - blocosEstacionamento["E2"].Count} vagas     E4: {5 - blocosEstacionamento["E4"].Count} vagas\n");
                         string bloco = Console.ReadLine();
 
                         switch(bloco.ToUpper())
                         {
                             case "E1":
-                                if(blocosEstacionamento["E1"] > 0)
+                                if(blocosEstacionamento["E1"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E1"] -= 1; 
+                                   blocosEstacionamento["E1"].Add(placa); 
                                 }
                                 else
                                 {
@@ -81,9 +82,9 @@ namespace Estacionamento.Services
                                 break;
 
                             case "E2":
-                                if(blocosEstacionamento["E2"] > 0)
+                                if(blocosEstacionamento["E2"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E2"] -= 1; 
+                                   blocosEstacionamento["E2"].Add(placa); 
                                 }
                                 else
                                 {
@@ -95,9 +96,9 @@ namespace Estacionamento.Services
                                 break;
 
                             case "E3":
-                                if(blocosEstacionamento["E3"] > 0)
+                                if(blocosEstacionamento["E3"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E3"] -= 1; 
+                                   blocosEstacionamento["E3"].Add(placa); 
                                 }
                                 else
                                 {
@@ -109,9 +110,9 @@ namespace Estacionamento.Services
                                 break;
 
                             case "E4":
-                                if(blocosEstacionamento["E4"] > 0)
+                                if(blocosEstacionamento["E4"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E4"] -= 1; 
+                                   blocosEstacionamento["E4"].Add(placa); 
                                 }
                                 else
                                 {
@@ -132,9 +133,11 @@ namespace Estacionamento.Services
                     }
                     while(verifica == false);
                     
-                    veiculos.Add(placa);
                     Console.Clear();
-                    Console.WriteLine("Veículo adicionado com sucesso!");
+                    Console.WriteLine($"Veículo adicionado com sucesso!");
+                    Console.WriteLine("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
+                    
                 }
             }   
 
@@ -166,8 +169,9 @@ namespace Estacionamento.Services
 
                     string placa = Console.ReadLine();
                     VerificarPlaca(placa);
+                    string bloco = BuscarVeiculo(placa);
 
-                    if(!veiculos.Contains(placa))
+                    if(BuscarVeiculo(placa) == null)
                     {
                         Console.WriteLine("Este veículo não se encontra aqui");
                         return false;
@@ -212,8 +216,7 @@ namespace Estacionamento.Services
                     }
                     
 
-                    veiculos.Remove(placa);
-                    capacidadeMaxima += 1;
+                    blocosEstacionamento[bloco].Remove(placa);
 
                     Console.Clear();
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
@@ -229,7 +232,8 @@ namespace Estacionamento.Services
                         lucroResponsavel[Funcionarios.VerificarUsuario()] += valorTotal;
                     }
 
-                    
+                    Console.WriteLine("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
                     return true;
                 }
                 catch(FormatException)
@@ -252,30 +256,40 @@ namespace Estacionamento.Services
                     Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
                     return false;
                 }
+
         }
 
         public void ListarVeiculos()
         {
-            Console.Clear();
-            Console.WriteLine("--------------------------------");
 
-            // Verifica se há veículos no estacionamento
-            if (veiculos.Any())
-            {                
-                Console.WriteLine("Os veículos estacionados são:");                
+            // Verifica se há veículos no estacionamento              
 
-                foreach(string placa in veiculos)
-                {   
-                    Console.WriteLine(placa.ToUpper().Insert(3, "-"));
+                foreach(var bloco in blocosEstacionamento)
+                {
+                    Console.Clear();                    
+                    Console.WriteLine($"Bloco {bloco.Key}");                    
+
+                    if (bloco.Value.Any())
+                    {
+                        Console.WriteLine("Os veículos estacionados são:");
+                        Console.WriteLine("--------------------------------");
+
+                        foreach(var veiculo in bloco.Value)
+                        {
+                            Console.WriteLine(veiculo.ToUpper().Insert(3, "-"));
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("--------------------------------");
+                        Console.WriteLine("Não há veículos estacionados.");
+                    }
+
+                    Console.WriteLine("\nPressione qualquer tecla para continuar");
+                    Console.ReadKey();
                 }
-            }
-            
-            else
-            {
-                Console.WriteLine("Não há veículos estacionados.");
-            }
 
-            Console.WriteLine("--------------------------------");
+            Console.Clear();
         }
 
         //Faz validações quanto a placa informada e retorna um erro caso exista
@@ -319,7 +333,7 @@ namespace Estacionamento.Services
 
             try
             {
-                if(veiculos.Any())
+                if(BuscarVeiculo())
                 {
                     throw new EstacionamentoNaoVazioException();
                 }
@@ -389,6 +403,32 @@ namespace Estacionamento.Services
                     Console.WriteLine("\nOpção inválida");
                     return false;  
             }
+        }
+
+        public bool BuscarVeiculo()
+        {
+            foreach(var bloco in blocosEstacionamento)
+            {
+                if(bloco.Value.Any())
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public string BuscarVeiculo(string placa)
+        {
+            foreach(var bloco in blocosEstacionamento)
+            {
+                if(bloco.Value.Contains(placa))
+                {
+                    return bloco.Key;
+                }
+            }
+
+            return null;
         }
     }
 }

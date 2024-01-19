@@ -84,9 +84,6 @@ while (exibirMenu)
             Console.WriteLine("Opção inválida");
             break;
     }
-
-    Console.WriteLine("\nPressione uma tecla para continuar");
-    Console.ReadKey();
 }
 Console.Clear();
 Console.WriteLine("O programa se encerrou");
