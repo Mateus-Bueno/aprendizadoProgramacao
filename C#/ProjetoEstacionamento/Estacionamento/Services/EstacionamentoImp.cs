@@ -12,6 +12,14 @@ namespace Estacionamento.Services
         private decimal precoInicial = 0, precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
         private decimal lucroNaoRegistrado = 0;
+        public static Dictionary<string, int> blocosEstacionamento = new Dictionary<string, int>()
+        {
+            {"E1", 5},
+            {"E2", 5},
+            {"E3", 5},
+            {"E4", 5}
+        };
+        private int capacidadeMaxima;
         public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
         public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>()
         {
@@ -44,6 +52,86 @@ namespace Estacionamento.Services
                 else
                 {
                     VerificarPlaca(placa);
+
+                    bool verifica;
+
+                    do
+                    {
+                        verifica = true;
+                        Console.Clear();
+                        Console.WriteLine("Informe o bloco onde este veículo irá estacionar");
+                        Console.WriteLine($"E1: {blocosEstacionamento["E1"]} vagas     E3: {blocosEstacionamento["E3"]} vagas");
+                        Console.WriteLine($"E2: {blocosEstacionamento["E2"]} vagas     E4: {blocosEstacionamento["E4"]} vagas\n");
+                        string bloco = Console.ReadLine();
+
+                        switch(bloco.ToUpper())
+                        {
+                            case "E1":
+                                if(blocosEstacionamento["E1"] > 0)
+                                {
+                                   blocosEstacionamento["E1"] -= 1; 
+                                }
+                                else
+                                {
+                                    verifica = false;
+                                    Console.Clear();
+                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
+                                    Console.ReadKey();
+                                }
+                                break;
+
+                            case "E2":
+                                if(blocosEstacionamento["E2"] > 0)
+                                {
+                                   blocosEstacionamento["E2"] -= 1; 
+                                }
+                                else
+                                {
+                                    verifica = false;
+                                    Console.Clear();
+                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
+                                    Console.ReadKey();
+                                }
+                                break;
+
+                            case "E3":
+                                if(blocosEstacionamento["E3"] > 0)
+                                {
+                                   blocosEstacionamento["E3"] -= 1; 
+                                }
+                                else
+                                {
+                                    verifica = false;
+                                    Console.Clear();
+                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
+                                    Console.ReadKey();
+                                }
+                                break;
+
+                            case "E4":
+                                if(blocosEstacionamento["E4"] > 0)
+                                {
+                                   blocosEstacionamento["E4"] -= 1; 
+                                }
+                                else
+                                {
+                                    verifica = false;
+                                    Console.Clear();
+                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
+                                    Console.ReadKey();
+                                }
+                                break;
+
+                            default:
+                                Console.Clear();
+                                Console.WriteLine("Opção Inválida, tente novamente.");
+                                Console.ReadKey();
+                                verifica = false;
+                                break;
+                        }
+                    }
+                    while(verifica == false);
+                    
                     veiculos.Add(placa);
                     Console.Clear();
                     Console.WriteLine("Veículo adicionado com sucesso!");
@@ -125,6 +213,7 @@ namespace Estacionamento.Services
                     
 
                     veiculos.Remove(placa);
+                    capacidadeMaxima += 1;
 
                     Console.Clear();
                     Console.WriteLine($"O veículo {placa.ToUpper().Insert(3, "-")} foi removido e o preço total foi de: {valorTotal:C}");
