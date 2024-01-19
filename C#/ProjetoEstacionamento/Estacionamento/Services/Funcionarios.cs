@@ -18,12 +18,11 @@ namespace Estacionamento.Services
     {
         private static string usuarioAtual;
 
-        public static void RealizarLogin()
+        public static bool RealizarLogin()
         {
-            Console.Clear();
-
             try
             {
+                Console.Clear();
                 Console.WriteLine("----------------------------");
                 Console.WriteLine("Insira o nome de usuário:");
                 Console.WriteLine("----------------------------");
@@ -33,7 +32,10 @@ namespace Estacionamento.Services
                     throw new NomeDeUsuarioVazioException();
                 }
 
+                Console.Clear();
+                Console.WriteLine("----------------------------");
                 Console.WriteLine("Insira sua senha:");
+                Console.WriteLine("----------------------------");
                 string senha = Console.ReadLine();
                 if(string.IsNullOrWhiteSpace(senha))
                 {
@@ -46,27 +48,32 @@ namespace Estacionamento.Services
                     Console.Clear();
                     Console.WriteLine("Login Realizado com sucesso");
                     Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
+                    return true;
                 }
+                else { return false; }
             }
 
             catch(InformacoesDeLoginIncorretasException)
             {
                 Console.WriteLine("Nome de usuário ou senha Incorretos!");
                 Console.WriteLine("Tente novamente");
+                return false;
             }
 
             catch(NomeDeUsuarioVazioException)
             {
                 Console.WriteLine("O nome de usuário não pode ser vazio!");
+                return false;
             }
 
             catch(SenhaVaziaException)
             {
                 Console.WriteLine("A senha não pode ser vazia!");
+                return false;
             }
         }
 
-        public static void CadastrarNovoUsuario()
+        public static bool CadastrarNovoUsuario()
         {
             Console.Clear();
 
@@ -131,6 +138,7 @@ namespace Estacionamento.Services
                 {
                     case "s":
                         usuarioAtual = nomeDeUsuario;
+                        Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
                         break;                    
                     case "n":
                         break;
@@ -138,31 +146,38 @@ namespace Estacionamento.Services
                         Console.WriteLine("\nOpção Inválida");
                         break;
                 }
+
+                return true;
             }
             catch(NomeDeUsuarioJaUsadoException)
             {
                 Console.WriteLine("\nNão foi possivel finalizar o cadastro");
                 Console.WriteLine("Este nome de usuário já está sendo usado!");
+                return false;
             }
 
             catch(NomeDeUsuarioInvalidoException)
             {
                 Console.WriteLine("O nome de usuário deve conter apenas letras!");
+                return false;
             }
 
             catch(NomeDeUsuarioVazioException)  
             {
                 Console.WriteLine("O nome de usuário não pode ser vazio!");
+                return false;
             }
 
             catch(SenhaVaziaException)
             {
                 Console.WriteLine("A senha não pode ser vazia!");
+                return false;
             }
             catch(SenhaInvalidaException)
             {
                 Console.WriteLine("Senha inválida");
                 Console.WriteLine("A senha deve conter 4 dígitos de 0 a 9");
+                return false;
             }
         }
 
@@ -182,7 +197,6 @@ namespace Estacionamento.Services
 
         public static bool VerificarInformacoesDeLogin(string nomeDeUsuario, string senha)
         {
-            
             using(StreamReader sr = new StreamReader("LoginInfo.txt"))
             {
                 while(!sr.EndOfStream)
@@ -191,6 +205,7 @@ namespace Estacionamento.Services
 
                     if(dadosDoUsuario[0] == nomeDeUsuario.ToUpper() && dadosDoUsuario[1] == senha)
                     {
+                        usuarioAtual = nomeDeUsuario;
                         return true;
                     }
                 }
@@ -198,7 +213,5 @@ namespace Estacionamento.Services
                 throw new InformacoesDeLoginIncorretasException();
             }
         }
-
-        
     }
 }

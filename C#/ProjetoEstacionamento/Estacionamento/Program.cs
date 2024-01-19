@@ -8,8 +8,14 @@ bool inicializadorEstacionamento = true;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
-
-
+using(StreamReader sr = new StreamReader("LoginInfo.txt"))
+{
+    while(sr.EndOfStream == false)
+    {
+        string[] dadosDoUsuario = sr.ReadLine().Split("|");
+        EstacionamentoImp.lucroResponsavel.Add(dadosDoUsuario[0], 0); 
+    }
+}
 
 do
 {
@@ -45,14 +51,11 @@ bool exibirMenu = true;
 while (exibirMenu)
 {
     Console.Clear();
-    Console.WriteLine("----------------------------");
     Console.WriteLine("Digite a sua opção:");
-    Console.WriteLine("1 - Cadastrar veículo");
-    Console.WriteLine("2 - Remover veículo");
+    Console.WriteLine("1 - Cadastrar veículo               4 - alterar funcionario");
+    Console.WriteLine("2 - Remover veículo                 5 - Encerrar");
     Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - alterar funcionario ");
-    Console.WriteLine("5 - Encerrar");
-    Console.WriteLine("----------------------------");
+    Console.WriteLine("--------------------------------------------------------------\n");
 
     switch (Console.ReadLine())
     {
@@ -69,7 +72,8 @@ while (exibirMenu)
             break;
 
         case "4":
-            es.MenuDeUsuario();
+            while(!es.MenuDeUsuario())
+            { Console.ReadKey(); }
             break;
 
         case "5":

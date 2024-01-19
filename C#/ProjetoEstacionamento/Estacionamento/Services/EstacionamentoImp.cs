@@ -13,26 +13,18 @@ namespace Estacionamento.Services
         private decimal lucroDoDia { get; set; } = 0;
         private decimal lucroNaoRegistrado = 0;
         public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
-        public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>();
+        public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>()
+        {
+            {"Dinheiro", 0},
+            {"Débito", 0},
+            {"Pix", 0} 
+        };
         private List<string> veiculos = new List<string>();
 
         public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
         {
             this.precoInicial = precoInicial;
             this.precoPorHora = precoPorHora;
-
-            using(StreamReader sr = new StreamReader("LoginInfo.txt"))
-            {
-                while(sr.EndOfStream == false)
-                {
-                    string[] dadosDoUsuario = sr.ReadLine().Split("|");
-                    lucroResponsavel.Add(dadosDoUsuario[0], 0); 
-                }
-            }
-
-            formaDePagamento.Add("Dinheiro", 0);
-            formaDePagamento.Add("Débito", 0);
-            formaDePagamento.Add("Pix", 0);
         }
 
         public void AdicionarVeiculo()
@@ -47,23 +39,27 @@ namespace Estacionamento.Services
             {
                 if(veiculos.Contains(placa))
                 {
-                    Console.WriteLine("\nEste carro já se encontra no estacionamento.");
+                    Console.WriteLine("Este carro já se encontra no estacionamento.");
                 }
                 else
                 {
                     VerificarPlaca(placa);
                     veiculos.Add(placa);
+                    Console.Clear();
+                    Console.WriteLine("Veículo adicionado com sucesso!");
                 }
             }   
 
             catch (PlacaVaziaException)
             {
-                Console.WriteLine("\nNenhuma placa inserida. Por favor tente novamente\n");
+                Console.Clear();
+                Console.WriteLine("Nenhuma placa inserida. Por favor tente novamente");
             }   
 
             catch (PlacaInvalidaException)
             {
-                Console.WriteLine("\nFormato de placa inválido.");
+                Console.Clear();
+                Console.WriteLine("Formato de placa inválido.");
                 Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
             }       
         }
@@ -149,17 +145,20 @@ namespace Estacionamento.Services
                 }
                 catch(FormatException)
                 {
+                    Console.Clear();
                     Console.WriteLine("Ocorreu um erro ao informar o valor.");
                     Console.WriteLine("Por favor tente novamente");
                     return false;
                 }
                 catch(PlacaVaziaException)
                 {
+                    Console.Clear();
                     Console.WriteLine("Nenhuma placa inserida. Por favor tente novamente");
                     return false;
                 }
                 catch(PlacaInvalidaException)
                 {
+                    Console.Clear();
                     Console.WriteLine("\nFormato de placa inválido.");
                     Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
                     return false;
@@ -274,26 +273,32 @@ namespace Estacionamento.Services
             return status;
         }
 
-        public void MenuDeUsuario()
+        public bool MenuDeUsuario()
         {
             Console.Clear();
-            Console.WriteLine($"Usuário atual: {Funcionarios.VerificarUsuario()}");
+            
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Digite sua opção:");
             Console.WriteLine("1 - Cadastrar novo usuário");
             Console.WriteLine("2 - Alternar usuário atual");
+            Console.WriteLine("3 - Voltar");
             Console.WriteLine("------------------------------------------");
+            Console.WriteLine($"Usuário atual: {Funcionarios.VerificarUsuario()}");
             switch(Console.ReadLine())
             {
                 case "1":
-                    Funcionarios.CadastrarNovoUsuario();
-                    break;
+                    return Funcionarios.CadastrarNovoUsuario();
+
                 case "2":
-                    Funcionarios.RealizarLogin();
-                    break;
+                    return Funcionarios.RealizarLogin();
+                    
+                case "3":
+                    return true;
+
                 default:
+                    Console.Clear();
                     Console.WriteLine("\nOpção inválida");
-                    break;
+                    return false;  
             }
         }
     }
