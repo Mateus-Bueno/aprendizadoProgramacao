@@ -48,6 +48,7 @@ namespace Estacionamento.Services
                     Console.Clear();
                     Console.WriteLine("Login Realizado com sucesso");
                     Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
+                    Console.ReadKey();
                     return true;
                 }
                 else { return false; }
@@ -57,18 +58,21 @@ namespace Estacionamento.Services
             {
                 Console.WriteLine("Nome de usuário ou senha Incorretos!");
                 Console.WriteLine("Tente novamente");
+                Console.ReadKey();
                 return false;
             }
 
             catch(NomeDeUsuarioVazioException)
             {
                 Console.WriteLine("O nome de usuário não pode ser vazio!");
+                Console.ReadKey();
                 return false;
             }
 
             catch(SenhaVaziaException)
             {
                 Console.WriteLine("A senha não pode ser vazia!");
+                Console.ReadKey();
                 return false;
             }
         }
@@ -139,11 +143,13 @@ namespace Estacionamento.Services
                     case "s":
                         usuarioAtual = nomeDeUsuario;
                         Console.WriteLine($"Bem vindo(a) {nomeDeUsuario.ToUpper()}!");
+                        Console.ReadKey();
                         break;                    
                     case "n":
                         break;
                     default:
                         Console.WriteLine("\nOpção Inválida");
+                        Console.ReadKey();
                         break;
                 }
 
@@ -153,30 +159,35 @@ namespace Estacionamento.Services
             {
                 Console.WriteLine("\nNão foi possivel finalizar o cadastro");
                 Console.WriteLine("Este nome de usuário já está sendo usado!");
+                Console.ReadKey();
                 return false;
             }
 
             catch(NomeDeUsuarioInvalidoException)
             {
                 Console.WriteLine("O nome de usuário deve conter apenas letras!");
+                Console.ReadKey();
                 return false;
             }
 
             catch(NomeDeUsuarioVazioException)  
             {
                 Console.WriteLine("O nome de usuário não pode ser vazio!");
+                Console.ReadKey();
                 return false;
             }
 
             catch(SenhaVaziaException)
             {
                 Console.WriteLine("A senha não pode ser vazia!");
+                Console.ReadKey();
                 return false;
             }
             catch(SenhaInvalidaException)
             {
                 Console.WriteLine("Senha inválida");
                 Console.WriteLine("A senha deve conter 4 dígitos de 0 a 9");
+                Console.ReadKey();
                 return false;
             }
         }

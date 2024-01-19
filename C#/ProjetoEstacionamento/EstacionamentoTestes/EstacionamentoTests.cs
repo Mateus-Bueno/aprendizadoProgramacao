@@ -1,4 +1,5 @@
 using Estacionamento.Services;
+using Estacionamento.Exceptions;
 
 namespace EstacionamentoTestes;
 
@@ -9,120 +10,66 @@ public class EstacionamentoTests
 
 
     [Theory]
-    [InlineData("xyz5678")]
-    [InlineData("MNO9876")]
-    [InlineData("FLA3B74")]
-    [InlineData("abc1d23")]
-    public void AdicionarVeiculo_Sucesso(string placa)
+    [InlineData("xyz5678\ne1")]
+    [InlineData("MNO9876\nE3")]
+    [InlineData("FLA3B74\ne2")]
+    [InlineData("abc1d23\nE4")]
+    public void AdicionarVeiculo_Sucesso(string input)
     {
         // Given
-        var saida = new StringWriter();
-        Console.SetOut(saida);
-
-        var entrada = new StringReader(placa);
+        var entrada = new StringReader(input);
         Console.SetIn(entrada);
-
-        var saidaEsperada =  @"------------------------------------------------
-Digite a placa do veículo para estacionar:
-------------------------------------------------
-Veículo adicionado com sucesso!
-";
     
-        // When
-
-        _es.AdicionarVeiculo();
-        
-    
+        // When      
         // Then
 
-        Assert.Equal(saidaEsperada, saida.ToString());
+        Assert.True(_es.AdicionarVeiculo());
     }
 
     [Theory]
     [InlineData("")]
     [InlineData("     ")]
-    public void AdicionarVeiculo_Erro_PlacaVazia(string placa)
+    public void AdicionarVeiculo_Erro_PlacaVazia(string input)
     {
         // Given
-        var saida = new StringWriter();
-        Console.SetOut(saida);
 
-        var entrada = new StringReader(placa);
+        var entrada = new StringReader(input);
         Console.SetIn(entrada);
 
-        var saidaEsperada =  @"------------------------------------------------
-Digite a placa do veículo para estacionar:
-------------------------------------------------
-Nenhuma placa inserida. Por favor tente novamente
-";
-    
         // When
-
-        _es.AdicionarVeiculo();
-        
-    
         // Then
 
-        Assert.Equal(saidaEsperada, saida.ToString());
+        Assert.Throws<PlacaVaziaException>(() => _es.AdicionarVeiculo());
     }
 
     [Theory]
     [InlineData("aaaaa")]
     [InlineData("ggi314@")]
-    public void AdicionarVeiculo_Erro_PlacaInvalida(string placa)
+    public void AdicionarVeiculo_Erro_PlacaInvalida(string input)
     {
         // Given
-        var saida = new StringWriter();
-        Console.SetOut(saida);
-
-        var entrada = new StringReader(placa);
+        var entrada = new StringReader(input);
         Console.SetIn(entrada);
-
-        var saidaEsperada =  @"------------------------------------------------
-Digite a placa do veículo para estacionar:
-------------------------------------------------
-Formato de placa inválido.
-Certifique-se de atender ao padrão Mercosul ou Nacional Única
-";
     
-        // When
-
-        _es.AdicionarVeiculo();
-        
-    
+        // When      
         // Then
 
-        Assert.Equal(saidaEsperada, saida.ToString());
+        Assert.Throws<PlacaInvalidaException>(() => _es.AdicionarVeiculo());
     }
 
     [Theory]
     [InlineData("FLA3B74\nFLA3B74")]
     [InlineData("abc1d23\nabc1d23")]
-    public void AdicionarVeiculo_Erro_CarroJaEstacionado(string placa)
+    public void AdicionarVeiculo_Erro_CarroJaEstacionado(string input)
     {
         // Given
-        var entrada = new StringReader(placa);
+        var entrada = new StringReader(input);
         Console.SetIn(entrada);
-
-        _es.AdicionarVeiculo();
-
-        var saida = new StringWriter();
-        Console.SetOut(saida);
-
-        var saidaEsperada =  @"------------------------------------------------
-Digite a placa do veículo para estacionar:
-------------------------------------------------
-Este carro já se encontra no estacionamento.
-";
     
         // When
-
-        _es.AdicionarVeiculo();
-        
-    
         // Then
 
-        Assert.Equal(saidaEsperada, saida.ToString());
+        Assert.False(_es.AdicionarVeiculo());
     }
 
     [Theory]
@@ -162,7 +109,7 @@ Este carro já se encontra no estacionamento.
     public void ListarVeiculos()
     {
         // Given
-        var entrada = new StringReader("xyz5678\nMNO9876");
+        var entrada = new StringReader("xyz5678\ne1\nMNO9876\ne2");
         Console.SetIn(entrada);
         _es.AdicionarVeiculo();
         _es.AdicionarVeiculo();
@@ -170,11 +117,28 @@ Este carro já se encontra no estacionamento.
         var saida = new StringWriter();
         Console.SetOut(saida);
 
-        var saidaEsperada =  @"--------------------------------
+        var saidaEsperada =  @"Bloco E1
 Os veículos estacionados são:
-XYZ-5678
-MNO-9876
 --------------------------------
+XYZ-5678
+
+Pressione qualquer tecla para continuar
+Bloco E2
+Os veículos estacionados são:
+--------------------------------
+MNO-9876
+
+Pressione qualquer tecla para continuar
+Bloco E3
+--------------------------------
+Não há veículos estacionados.
+
+Pressione qualquer tecla para continuar
+Bloco E4
+--------------------------------
+Não há veículos estacionados.
+
+Pressione qualquer tecla para continuar
 ";
     
         // When

@@ -20,7 +20,6 @@ namespace Estacionamento.Services
             {"E3", new List<string>()},
             {"E4", new List<string>()}
         };
-        private int capacidadeMaxima;
         public static Dictionary<string, decimal> lucroResponsavel = new Dictionary<string, decimal>();
         public static Dictionary<string, decimal> formaDePagamento = new Dictionary<string, decimal>()
         {
@@ -35,7 +34,7 @@ namespace Estacionamento.Services
             this.precoPorHora = precoPorHora;
         }
 
-        public void AdicionarVeiculo()
+        public bool AdicionarVeiculo()
         {
             try
             {
@@ -49,11 +48,10 @@ namespace Estacionamento.Services
                 if(BuscarVeiculo(placa) != null)
                 {
                     Console.WriteLine("Este carro já se encontra no estacionamento.");
+                    return false;
                 }
                 else
                 {
-                    
-
                     bool verifica;
 
                     do
@@ -70,7 +68,7 @@ namespace Estacionamento.Services
                             case "E1":
                                 if(blocosEstacionamento["E1"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E1"].Add(placa); 
+                                   blocosEstacionamento["E1"].Add(placa);
                                 }
                                 else
                                 {
@@ -84,7 +82,7 @@ namespace Estacionamento.Services
                             case "E2":
                                 if(blocosEstacionamento["E2"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E2"].Add(placa); 
+                                   blocosEstacionamento["E2"].Add(placa);
                                 }
                                 else
                                 {
@@ -98,7 +96,7 @@ namespace Estacionamento.Services
                             case "E3":
                                 if(blocosEstacionamento["E3"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E3"].Add(placa); 
+                                   blocosEstacionamento["E3"].Add(placa);
                                 }
                                 else
                                 {
@@ -112,7 +110,7 @@ namespace Estacionamento.Services
                             case "E4":
                                 if(blocosEstacionamento["E4"].Count <= 5)
                                 {
-                                   blocosEstacionamento["E4"].Add(placa); 
+                                   blocosEstacionamento["E4"].Add(placa);
                                 }
                                 else
                                 {
@@ -124,10 +122,10 @@ namespace Estacionamento.Services
                                 break;
 
                             default:
+                                verifica = false;
                                 Console.Clear();
                                 Console.WriteLine("Opção Inválida, tente novamente.");
                                 Console.ReadKey();
-                                verifica = false;
                                 break;
                         }
                     }
@@ -137,6 +135,7 @@ namespace Estacionamento.Services
                     Console.WriteLine($"Veículo adicionado com sucesso!");
                     Console.WriteLine("\nPressione qualquer tecla para continuar");
                     Console.ReadKey();
+                    return true;
                     
                 }
             }   
@@ -145,6 +144,8 @@ namespace Estacionamento.Services
             {
                 Console.Clear();
                 Console.WriteLine("Nenhuma placa inserida. Por favor tente novamente");
+                Console.ReadKey();
+                return false;
             }   
 
             catch (PlacaInvalidaException)
@@ -152,6 +153,8 @@ namespace Estacionamento.Services
                 Console.Clear();
                 Console.WriteLine("Formato de placa inválido.");
                 Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
+                Console.ReadKey();
+                return false;
             }       
         }
 
@@ -241,12 +244,14 @@ namespace Estacionamento.Services
                     Console.Clear();
                     Console.WriteLine("Ocorreu um erro ao informar o valor.");
                     Console.WriteLine("Por favor tente novamente");
+                    Console.ReadKey();
                     return false;
                 }
                 catch(PlacaVaziaException)
                 {
                     Console.Clear();
                     Console.WriteLine("Nenhuma placa inserida. Por favor tente novamente");
+                    Console.ReadKey();
                     return false;
                 }
                 catch(PlacaInvalidaException)
@@ -254,6 +259,7 @@ namespace Estacionamento.Services
                     Console.Clear();
                     Console.WriteLine("\nFormato de placa inválido.");
                     Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
+                    Console.ReadKey();
                     return false;
                 }
 

@@ -82,6 +82,7 @@ while (exibirMenu)
 
         default:
             Console.WriteLine("Opção inválida");
+            Console.ReadKey();
             break;
     }
 }
