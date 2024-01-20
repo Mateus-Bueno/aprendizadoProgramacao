@@ -1,32 +1,60 @@
-# 📚Projeto Estacionamento
-### Contexto e escopo do projeto
+# 🚘 Projeto Estacionamento 🚘
+
+## Sumário
+
+* [Contexto e escopo do projeto](#contexto-e-escopo-do-projeto)
+
+* [Informações sobre o projeto e sobre mim](#informações-sobre-o-projeto-e-sobre-mim)
+
+  * [Notas](#notas)
+
+  * [Modificações](#modificações)
+
+* [Informações sobre o código](#🔧-informações-sobre-o-código)
+  
+  * [EstacionamentoImp](#estacionamentoimp)
+
+    * [Propriedades](#propriedades)
+
+    * [Métodos](#métodos)
+ 
+  * [Funcionarios](#funcionarios)
+
+    * [Propriedades](#propriedades-1)
+
+    * [Métodos](#métodos-1)
+
+  * [Pasta de Exceptions](#pasta-de-exceptions)
+
+---
+
+## Contexto e escopo do projeto
 
 Este projeto foi desenvolvido com a tecnologia C# a partir das seguintes instruções do curso DecolaTech Avanade, da Digital Innovation One:
 > Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
 
 O projeto para entrega pode ser acessado [Aqui](https://github.com/digitalinnovationone/trilha-net-fundamentos-desafio)
 
-# Sumário
-* [Informações sobre o projeto](#informações-sobre-o-projeto)
-  
-  * [EstacionamentoImp](#estacionamentoimp)
- 
-  * [Funcionarios](#funcionarios)
+---
 
-* [Pasta de Exceptions](#pasta-de-exceptions)
+# 📚 Informações sobre o projeto e sobre mim
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Notas
+Após o termino do bootcamp, eu decidi alterar os projetos desenvolvidos no mesmo. De início me senti perdido, sem ter nenhuma ideia de como modificar um projeto, sem fugir do escopo trazido inicialmente, ao ponto de que ele refletisse a minha personalidade e características. Quando comecei a realizar alterações básicas no projeto do estacionamento, as ideias passaram a fluir e desde então dedico, todos os dias, parte do meu tempo livre  a aprender mais do C# enquanto construo esse projeto. Hoje posso garantir que, apesar de estar ciente de existirem diversos aspectos em que posso melhorar, estou orgulhoso do que eu desenvolvi.
 
-### Principais modificações
-Visando não fugir do escopo trazido pela DIO, eu alterei o sistema pensando em uma aplicação real de estacionamento e tentando torná-lo mais robusto e informativo. Com esse intuito eu inclui:
-* Registro de funcionários do estacionamento, tendo em mente um possível cálculo de comissão ou contagem de horas trabalhadas
-* Relatório completo ao encerrar o programa, com informações que facilitem a contabilidade de lucros
-* Verificações para validar a autenticidade de dados recebidos
-* Exceptions para tratar erros e evitar o interrompimento ou mal funcionamento do programa
+### Modificações
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ **Robustez :** Inicialmente, eu implementei garantias de que o sistema não seria encerrado abruptamente devido a algum erro, para isso utilizei conjuntos de if-else que garantiram a não inserção de dados inválidos. Posteriormente, aprendi a como lidar com exceptions e as inseri em meu projeto como uma forma de torna-lo mais compreensível e menos poluído.
 
-# 📚Informações sobre o projeto
+**Aparencia :** Eu inclui, tanto no começo do meu projeto quanto nas funcionalidades mais recentes, comandos para limpar o console e quebrar as linhas a fim de tentar facilitar o entendimento da execução do meu programa.
+
+**Confiabilidade :** Enquanto testava o código, pensando em como melhorá-lo, percebi que qualquer valor poderia ser passado como uma placa devido à falta de informações contidas no sistema. A fim de resolver isso, busquei aprender sobre como definir um padrão a ser seguido pelas strings e descobri a ferramenta Regex, a qual também acabou sendo usada em outros momentos do código por sua flexibilidade e clareza.
+
+**Utilidade :** Ao longo desse período de modificações eu fui desenvolvendo novas funcionalidades para o sistema de estacionamento. Por acompanhar a minha evolução com a linguagem, mesmo tentando otimizar e padronizar o código, essas funcionalidades contam com diferentes níveis de complexidade e organização. Elas variam desde ferramentas úteis para a gestão e contabilidade, até ferramentas que tornam o uso do sistema mais eficiente para funcionários e clientes.
+
+---
+
+# 🔧 Informações sobre o código
 
 As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionarios", nesta seção eu irei detalhar mais suas propriedades, métodos e o intuito de cada escolha
 
@@ -42,26 +70,37 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
   * **lucroDoDia**: É o valor total recebido durante a execução do programa.
   * **lucroNaoRegistrado**: É o valor recebido sem que algum funcionário estivesse logado.
  
-* Usei dictionary's pois possibilita atrelar um valor (usei o tipo "string") a uma chave (usei o tipo decimal). Dessa forma eu consegui controlar, a fim de relatórios:
-  * **lucroResponsavel**: Guarda quanto foi recebido durante o expediente de cada funcionário.
-  * **formaDePagamento**: Guarda quanto foi recebido em cada forma de pagamento.
-    
-* Usar listas para o controle de veiculos no estacionamento traz praticidade na hora de adicionar ou remover elementos relevantes:
-  * **veiculos**: Representa uma coleção de veículos estacionados, contendo apenas a placa do veículo.
+* Propriedades inicializadas como dicionários para criar relações de Chave-Valor
+  * **lucroResponsavel**: Guarda quanto foi recebido (decimal) durante o expediente de cada funcionário(string).
+  * **formaDePagamento**: Guarda quanto foi recebido (decimal) em cada forma de pagamento(string).
+  * **blocosEstacionamento**: Representa os blocos do estacionamento (string) e a coleção de veículos estacionados neles(lista).
+
 
 ### Métodos
 
-* **AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável veiculos caso seja válida.
+* **Descrevem ações que podem ser realizadas ao interagir com a classe:**
+
+  * **AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e designar a um bloco caso seja válida.
   
-* **RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: precoInicial * precoPorHora, exibindo para o usuário e solicitando a forma de pagamento. Por fim, atualiza os dados relevantes para o relatório.
+  * **RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado e realizar o seguinte cálculo:
+
+    `valorTotal = precoInicial + precoPorHora * horas`
+
+    exibindo o resultado para o usuário e solicitando a forma de pagamento. Por fim, atualiza os dados relevantes para o relatório.
   
-* **ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibie a mensagem "Não há veículos estacionados".
+  * **ListarVeiculos**: Lista todos os veículos presentes em cada bloco do estacionamento. Caso não haja nenhum, exibe a mensagem "Não há veículos estacionados".
   
-* **VerificarPlaca**: Realiza validações na placa informada, com o intuito de garantir a adequação ao padrão mercosul ou nacional único.
+  * **MenuDeUsuario**: Oferece opções de cadastro ou login aos funcionários que utilizam o sistema.
   
-* **MenuDeUsuario**: Oferece opções de cadastro ou login aos funcionários que utilizam o sistema.
-  
-* **RelatorioDoDia**: Gera e informa um relatório dividido em três partes, sendo a primeira um relatório do valor gerado durante o expediente de cada funcionário, a segunda com o valor pago em cada forma de pagamento e a terceira informando o lucro total do dia.
+  * **RelatorioDoDia**: Gera e informa um relatório dividido em três partes, sendo a primeira um relatório do valor gerado durante o expediente de cada funcionário, a segunda com o valor pago em cada forma de pagamento e a terceira informando o lucro total do dia.
+
+* **Descrevem validações realizadas dentro de outros métodos:**
+
+  * **VerificarPlaca**: Realiza validações na placa informada como parâmetro, com o intuito de garantir a adequação ao padrão mercosul ou nacional único.
+
+  * **BuscarVeiculo**: Possui Duas sobrecargas, uma que não recebe parametros e retorna verdadeiro caso o veículo informado esteja no estacionamento; e outra que recebe uma placa e retorna o bloco onde determinado veículo se encontra, ou nulo se não existir.
+
+  * **VerificarCapacidadeBloco**: Recebe um bloco como parâmetro e retorna o bloco informado se houverem vagas disponíveis, ou um erro caso não houver;
 
 [Voltar ao sumário](#Sumário)
 
@@ -75,21 +114,25 @@ A única propriedade inicializada no escopo geral da classe é a string "usuario
 
 ### Métodos
 
-* **RealizarLogin**: Recebe os dados de entrada "nomeDeUsuario" e "senha", depois manda essas informações para serem verificadas, em caso de sucesso atualiza a string "usuarioAtual" para o nome de usuario informado.
+* **Descrevem ações que podem ser realizadas ao interagir com a classe:**
+
+  * **RealizarLogin**: Recebe os dados de entrada "nomeDeUsuario" e "senha", depois manda essas informações para serem verificadas, em caso de sucesso atualiza a string "usuarioAtual" para o nome de usuario informado.
+    
+  * **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada ao padrão estabelecido (quatro algarismos), inclui os dados do novo usuário no arquivo de registro .txt.
+
+* **Descrevem validações realizadas dentro de outros métodos:**
   
-* **CadastrarNovoUsuario**: Recebe um "nomeDeUsuario" e verifica se o nome digitado já existe no registro, em caso negativo solicita a entrada de uma senha. Caso a senha digitada seja adequada ao padrão estabelecido (quatro algarismos), inclui os dados do novo usuário no arquivo de registro .txt.
-  
-* **VerificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
-  
-* **VerificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
+  * **VerificarUsuario**: Método responsável por retornar a string privada "usuarioAtual".
+    
+  * **VerificarInformacoesDeLogin**: Método responsável por ler o registro com informações de login e comparar com as informações recebidas como parâmetros. Retorna verdadeiro em caso de sucesso, do contrário retorna uma exception.
 
 [Voltar ao sumário](#Sumário)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # 📚Pasta de Exceptions
 
-Inclui as principais falhas encontradas por mim durante o desenvolvimento e teste do projeto, além de exceptions utilizadas para construir algumas das lógicas do sistema
+Inclui as principais falhas encontradas por mim durante o desenvolvimento e teste do projeto, além de exceções utilizadas para construir algumas das lógicas do sistema
 
 ## ❗EstacionamentoImpExceptions
 

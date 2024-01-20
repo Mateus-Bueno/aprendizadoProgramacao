@@ -12,8 +12,6 @@ using System.Text.RegularExpressions;
 namespace Estacionamento.Services
 {
 
-    //Funciona como um registro de funcionário capaz de informar quem foi o responsável
-    //pelo estacionamento
     public static class Funcionarios
     {
         private static string usuarioAtual;
