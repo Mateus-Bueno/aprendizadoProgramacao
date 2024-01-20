@@ -60,7 +60,7 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
 
 ![Diagrama de Classes do Projeto](DiagramaDeClasses_ProjetoEstacionamento.png)
 
-## 🚗EstacionamentoImp
+## 🚗 EstacionamentoImp
 
 ### Propriedades
 
@@ -104,7 +104,7 @@ As duas classes principais deste projeto são "EstacionamentoImp" e "Funcionario
 
 [Voltar ao sumário](#Sumário)
 
-## 👩🏽‍💼Funcionarios
+## 👩🏽‍💼 Funcionarios
 
 É uma classe estática, de forma a tornar mais fácil o acesso de seus métodos e propriedades
 
@@ -130,7 +130,7 @@ A única propriedade inicializada no escopo geral da classe é a string "usuario
 
 ---
 
-# 📚Pasta de Exceptions
+# 📚 Pasta de Exceptions
 
 Inclui as principais falhas encontradas por mim durante o desenvolvimento e teste do projeto, além de exceções utilizadas para construir algumas das lógicas do sistema
 
