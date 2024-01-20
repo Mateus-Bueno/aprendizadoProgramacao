@@ -10,7 +10,7 @@
 
   * [Modificações](#modificações)
 
-* [Informações sobre o código](#🔧-informações-sobre-o-código)
+* [Informações sobre o código](#informações-sobre-o-código)
   
   * [EstacionamentoImp](#estacionamentoimp)
 
