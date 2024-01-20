@@ -4,13 +4,13 @@
 
 * [Contexto e escopo do projeto](#contexto-e-escopo-do-projeto)
 
-* [Informações sobre o projeto e sobre mim](#informações-sobre-o-projeto-e-sobre-mim)
+* [Informações sobre o projeto e sobre mim](#informacoes-sobre-o-projeto-e-sobre-mim)
 
   * [Notas](#notas)
 
   * [Modificações](#modificações)
 
-* [Informações sobre o código](#informações-sobre-o-código)
+* [Informações sobre o código](#informacoes-sobre-o-código)
   
   * [EstacionamentoImp](#estacionamentoimp)
 
