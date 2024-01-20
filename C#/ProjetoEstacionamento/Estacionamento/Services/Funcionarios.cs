@@ -77,6 +77,7 @@ namespace Estacionamento.Services
             }
         }
 
+
         public static bool CadastrarNovoUsuario()
         {
             Console.Clear();
@@ -192,6 +193,7 @@ namespace Estacionamento.Services
             }
         }
 
+
         public static string VerificarUsuario()
         {
             if(string.IsNullOrWhiteSpace(usuarioAtual))
@@ -205,6 +207,7 @@ namespace Estacionamento.Services
             }
             
         }
+        
 
         public static bool VerificarInformacoesDeLogin(string nomeDeUsuario, string senha)
         {

@@ -46,8 +46,6 @@ while(inicializadorEstacionamento);
 EstacionamentoImp es = new EstacionamentoImp(precoInicial, precoPorHora);
 
 bool exibirMenu = true;
-
-// Realiza o loop do menu
 while (exibirMenu)
 {
     Console.Clear();
@@ -87,4 +85,4 @@ while (exibirMenu)
     }
 }
 Console.Clear();
-Console.WriteLine("O programa se encerrou");
+Console.WriteLine("O programa se encerrou\n");

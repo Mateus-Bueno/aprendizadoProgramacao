@@ -10,6 +10,12 @@ namespace Estacionamento.Services
 {
     public class EstacionamentoImp
     {
+        public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
+        {
+            this.precoInicial = precoInicial;
+            this.precoPorHora = precoPorHora;
+        }
+
         private decimal precoInicial = 0, precoPorHora = 0;
         private decimal lucroDoDia { get; set; } = 0;
         private decimal lucroNaoRegistrado = 0;
@@ -28,11 +34,6 @@ namespace Estacionamento.Services
             {"Pix", 0} 
         };
 
-        public EstacionamentoImp(decimal precoInicial, decimal precoPorHora)
-        {
-            this.precoInicial = precoInicial;
-            this.precoPorHora = precoPorHora;
-        }
 
         public bool AdicionarVeiculo()
         {
@@ -48,6 +49,7 @@ namespace Estacionamento.Services
                 if(BuscarVeiculo(placa) != null)
                 {
                     Console.WriteLine("Este carro já se encontra no estacionamento.");
+                    Console.ReadKey();
                     return false;
                 }
                 else
@@ -61,64 +63,31 @@ namespace Estacionamento.Services
                         Console.WriteLine("Informe o bloco onde este veículo irá estacionar");
                         Console.WriteLine($"E1: {5 - blocosEstacionamento["E1"].Count} vagas     E3: {5 - blocosEstacionamento["E3"].Count} vagas");
                         Console.WriteLine($"E2: {5 - blocosEstacionamento["E2"].Count} vagas     E4: {5 - blocosEstacionamento["E4"].Count} vagas\n");
-                        string bloco = Console.ReadLine();
+                        string bloco = VerificarCapacidadeBloco(Console.ReadLine().ToUpper());
 
                         switch(bloco.ToUpper())
                         {
                             case "E1":
-                                if(blocosEstacionamento["E1"].Count <= 5)
-                                {
-                                   blocosEstacionamento["E1"].Add(placa);
-                                }
-                                else
-                                {
-                                    verifica = false;
-                                    Console.Clear();
-                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
-                                    Console.ReadKey();
-                                }
+                                blocosEstacionamento["E1"].Add(placa);
                                 break;
 
                             case "E2":
-                                if(blocosEstacionamento["E2"].Count <= 5)
-                                {
-                                   blocosEstacionamento["E2"].Add(placa);
-                                }
-                                else
-                                {
-                                    verifica = false;
-                                    Console.Clear();
-                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
-                                    Console.ReadKey();
-                                }
+                                blocosEstacionamento["E2"].Add(placa);
                                 break;
 
                             case "E3":
-                                if(blocosEstacionamento["E3"].Count <= 5)
-                                {
-                                   blocosEstacionamento["E3"].Add(placa);
-                                }
-                                else
-                                {
-                                    verifica = false;
-                                    Console.Clear();
-                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
-                                    Console.ReadKey();
-                                }
+                                blocosEstacionamento["E3"].Add(placa);
                                 break;
 
                             case "E4":
-                                if(blocosEstacionamento["E4"].Count <= 5)
-                                {
-                                   blocosEstacionamento["E4"].Add(placa);
-                                }
-                                else
-                                {
-                                    verifica = false;
-                                    Console.Clear();
-                                    Console.WriteLine("Este bloco já está cheio, tente novamente.");
-                                    Console.ReadKey();
-                                }
+                                blocosEstacionamento["E4"].Add(placa);
+                                break;
+
+                            case "F":
+                                verifica = false;
+                                Console.Clear();
+                                Console.WriteLine("Este bloco já está cheio, tente novamente.");
+                                Console.ReadKey();
                                 break;
 
                             default:
@@ -155,7 +124,7 @@ namespace Estacionamento.Services
                 Console.WriteLine("Certifique-se de atender ao padrão Mercosul ou Nacional Única");
                 Console.ReadKey();
                 return false;
-            }       
+            }
         }
 
         public bool RemoverVeiculo()
@@ -298,34 +267,6 @@ namespace Estacionamento.Services
             Console.Clear();
         }
 
-        //Faz validações quanto a placa informada e retorna um erro caso exista
-        public void VerificarPlaca(string placa)
-        {
-
-            if(string.IsNullOrWhiteSpace(placa))
-            {
-                throw new PlacaVaziaException();
-            }
-
-            if(placa.Length != 7)
-            {
-                throw new PlacaInvalidaException();
-            }
-            
-            // Define os formatos de placa considerados válidos
-            Regex padraoMercosul = new Regex("^[a-zA-Z]{3}[0-9][a-zA-Z]{1}[0-9]{2}$");
-            Regex padraoNormal = new Regex("^[a-zA-Z]{3}[0-9]{4}$");
-
-
-            if(padraoMercosul.IsMatch(placa) || padraoNormal.IsMatch(placa))
-            {
-            }
-            else
-            {
-                throw new PlacaInvalidaException();
-            }
-        }
-
         public bool RelatorioDoDia()
         {
             Console.Clear();
@@ -346,6 +287,7 @@ namespace Estacionamento.Services
 
                 Console.Clear();
                 Console.WriteLine("-------------------------------------------------");
+
                 foreach(var funcionario in lucroResponsavel)
                 {
                     if(funcionario.Value != 0)
@@ -353,6 +295,7 @@ namespace Estacionamento.Services
                         Console.WriteLine($"{funcionario.Key} finalizou {funcionario.Value:C} em pagamentos");
                     }
                 }
+                
                 Console.WriteLine($"{lucroNaoRegistrado:C} em pagamentos não registraram operador");
                 Console.WriteLine("-------------------------------------------------");
                 Console.ReadKey();
@@ -411,7 +354,36 @@ namespace Estacionamento.Services
             }
         }
 
-        public bool BuscarVeiculo()
+        
+        public void VerificarPlaca(string placa) // Faz validações quanto a placa informada e retorna um erro caso exista
+        {
+
+            if(string.IsNullOrWhiteSpace(placa))
+            {
+                throw new PlacaVaziaException();
+            }
+
+            if(placa.Length != 7)
+            {
+                throw new PlacaInvalidaException();
+            }
+            
+            // Define os formatos de placa considerados válidos
+            Regex padraoMercosul = new Regex("^[a-zA-Z]{3}[0-9][a-zA-Z]{1}[0-9]{2}$");
+            Regex padraoNormal = new Regex("^[a-zA-Z]{3}[0-9]{4}$");
+
+
+            if(padraoMercosul.IsMatch(placa) || padraoNormal.IsMatch(placa))
+            {
+            }
+            else
+            {
+                throw new PlacaInvalidaException();
+            }
+        }
+
+
+        public bool BuscarVeiculo() // Retorna verdadeiro caso o veículo informado esteja no estacionamento
         {
             foreach(var bloco in blocosEstacionamento)
             {
@@ -424,7 +396,8 @@ namespace Estacionamento.Services
             return false;
         }
 
-        public string BuscarVeiculo(string placa)
+
+        public string BuscarVeiculo(string placa) // Retorna o bloco onde determinado veículo se encontra, ou nulo se não existir
         {
             foreach(var bloco in blocosEstacionamento)
             {
@@ -435,6 +408,17 @@ namespace Estacionamento.Services
             }
 
             return null;
+        }
+
+
+        public string VerificarCapacidadeBloco(string bloco) // Retorna um código de erro caso houver, do contrário, retorna o bloco informado
+        {
+            string padraoBloco = @"^E[1-4]$";
+
+            if(!Regex.IsMatch(bloco, padraoBloco)) { return "invalido"; }
+
+            if(blocosEstacionamento[bloco].Count < 5){ return bloco; }
+            else { return "F"; };
         }
     }
 }

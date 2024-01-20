@@ -16,12 +16,12 @@ public class EstacionamentoTests
     [InlineData("abc1d23\nE4")]
     public void AdicionarVeiculo_Sucesso(string input)
     {
-        // Given
+        // Arrange
         var entrada = new StringReader(input);
         Console.SetIn(entrada);
     
-        // When      
-        // Then
+        // Act      
+        // Assert
 
         Assert.True(_es.AdicionarVeiculo());
     }
@@ -31,13 +31,13 @@ public class EstacionamentoTests
     [InlineData("     ")]
     public void AdicionarVeiculo_Erro_PlacaVazia(string input)
     {
-        // Given
+        // Arrange
 
         var entrada = new StringReader(input);
         Console.SetIn(entrada);
 
-        // When
-        // Then
+        // Act
+        // Assert
 
         Assert.Throws<PlacaVaziaException>(() => _es.AdicionarVeiculo());
     }
@@ -47,12 +47,12 @@ public class EstacionamentoTests
     [InlineData("ggi314@")]
     public void AdicionarVeiculo_Erro_PlacaInvalida(string input)
     {
-        // Given
+        // Arrange
         var entrada = new StringReader(input);
         Console.SetIn(entrada);
     
-        // When      
-        // Then
+        // Act      
+        // Assert
 
         Assert.Throws<PlacaInvalidaException>(() => _es.AdicionarVeiculo());
     }
@@ -62,12 +62,12 @@ public class EstacionamentoTests
     [InlineData("abc1d23\nabc1d23")]
     public void AdicionarVeiculo_Erro_CarroJaEstacionado(string input)
     {
-        // Given
+        // Arrange
         var entrada = new StringReader(input);
         Console.SetIn(entrada);
     
-        // When
-        // Then
+        // Act
+        // Assert
 
         Assert.False(_es.AdicionarVeiculo());
     }
@@ -77,30 +77,66 @@ public class EstacionamentoTests
     [InlineData("xyz9w87\nxyz9w87\n1\n1")]
     public void RemoverVeiculo_Sucesso(string placa)
     {
-        //arrange
+        //Arrange
         var entrada = new StringReader(placa);
         Console.SetIn(entrada);
         _es.AdicionarVeiculo();
 
-         //act
-         //assert
+         //Act
+         //Assert
         Assert.True(_es.RemoverVeiculo());
 
     }
 
-    [Theory]
-    [InlineData("abc1234\n    ")]
-    [InlineData("abc1234\nabc1234\nq")]
-    [InlineData("xyz9w87\nabc1234")]
-    public void RemoverVeiculo_Falha(string placa)
+    [Fact]
+    public void RemoverVeiculo_Erro_FormatException()
     {
-        //arrange
-        var entrada = new StringReader(placa);
+        //Arrange
+        var entrada = new StringReader("abc1234\nabc1234\nq");
         Console.SetIn(entrada);
         _es.AdicionarVeiculo();
 
-         //act
-         //assert
+        //Act
+        //Assert
+        Assert.Throws<FormatException>(() => _es.RemoverVeiculo());
+    }
+
+    [Fact]
+    public void RemoverVeiculo_Erro_PlacaVazia()
+    {
+        //Arrange
+        var entrada = new StringReader("abc1234\n    ");
+        Console.SetIn(entrada);
+        _es.AdicionarVeiculo();
+
+        //Act
+        //Assert
+        Assert.Throws<PlacaVaziaException>(() => _es.RemoverVeiculo());
+    }
+
+    [Fact]
+    public void RemoverVeiculo_Erro_PlacaInvalida()
+    {
+        //Arrange
+        var entrada = new StringReader("xyz9w87\naaabbbb");
+        Console.SetIn(entrada);
+        _es.AdicionarVeiculo();
+
+        //Act
+        //Assert
+        Assert.Throws<PlacaInvalidaException>(() => _es.RemoverVeiculo());
+    }
+
+    [Fact]
+    public void RemoverVeiculo_Falha()
+    {
+        //Arrange
+        var entrada = new StringReader("xyz9w87\nabc1234");
+        Console.SetIn(entrada);
+        _es.AdicionarVeiculo();
+
+         //Act
+         //Assert
         Assert.False(_es.RemoverVeiculo());
 
     }
@@ -108,7 +144,7 @@ public class EstacionamentoTests
     [Fact]
     public void ListarVeiculos()
     {
-        // Given
+        // Arrange
         var entrada = new StringReader("xyz5678\ne1\nMNO9876\ne2");
         Console.SetIn(entrada);
         _es.AdicionarVeiculo();
@@ -141,12 +177,12 @@ Não há veículos estacionados.
 Pressione qualquer tecla para continuar
 ";
     
-        // When
+        // Act
 
         _es.ListarVeiculos();
         
     
-        // Then
+        // Assert
 
         Assert.Equal(saidaEsperada, saida.ToString());
     }
